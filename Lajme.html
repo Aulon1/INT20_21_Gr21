@@ -6,52 +6,174 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+<style> 
+.LAJMET{
+    width: 100%;
+    margin: auto ;
+    margin-top: 0px;
+    background-color: white;
+    text-align: left;
+}
+main{
+    width: 75%;
+    float: left;
+}
+aside{
+    width: 25%;
+    float: right;
+}
+.Lajmet{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 350px 350px;
+    grid-template-areas: "p  p p1 " "p p  p2 ";
+text-align: left;
+}
+.LAJMET img{
+    width: 100%;
+    bottom: 100px;
+}
+
+.Lajmet h5{
+    font-size: 13px;
+}
+.Lajmet p{
+    font-size: 13px;
+    padding: 10px;
+}
+#lajmi img{
+    bottom: 100px;
+}
+.lajmi h5{
+font-size: 20px;
+}
+.lajmi{
+    grid-area : p;   
+    word-wrap: break-word;
+}
+.lajmi1{
+grid-area: p1;
+word-wrap: break-word;
+
+}
+.lajmi2{
+grid-area: p2;
+
+  word-wrap: break-word;
+
+}
+
+.Lajmet a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.Lajmet a:visited {
+    color: rgb(29, 29, 85);
+    background-color: transparent;
+    text-decoration: none;
+}
+.Lajmet a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.Lajmet a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.vija{
+    width: 100%;
+    height: 6px;
+    background-color: black;
+}
+.A p{
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+.reklama:hover{
+  
+    transform: rotateX(360deg);
+  background-color: teal;
+
+}
+.reklama {
+  
+  width: 90%;
+  margin: 30px auto;
+  height: 450px;
+  background-image: url(r.jpg);
+  background-size: cover ;
+  background-position: center;
+  transition: background-color 2s, transform 2s;
+ 
+}
+.reklama h5{
+  background-color: black;
+  color: white;
+font-size: 25px;
+position: relative;
+top: 200px;
+margin: auto;
+}
+.aside h2{
+  text-align: center;
+  font-size: 24px;
+ 
+}
+.aside h5{
+  background-color: blanchedalmond;
+  color: black;
+  font-size: 100px;
+  position: center;
+  top: 300px;
+  margin: auto;
+  text-align: justify;
+}
+@media(max-width:1023px){
+   
+
+    .Lajmet{
+        
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 350px 250px  250px;
+        grid-template-areas: 
+        "p p "
+        "p1 p2 ";
+       
+    }
+}
+@media(max-width:767px){
     
-      .container{
-          width: 100%;
-          margin: auto ;
-          margin-top: 0px;
-          background-color: gainsboro;
-      }
-      main{
-          width: 75%;
-      float: left;
-      }
-      aside{
-      width: 25%;
-      float: right;
-      }
-      .Table table{
-          background-color: white;
-          width: 100%;
-          border: black solid 2px;
-      border-collapse: collapse;
-      }
-      .Table td{
-          border: black solid 2px;
-          height: 340px;
-      }
-      .Table img{
-          width: 97%;
-          
-      }
-      #lajmi_1{
-          width: 65%;
-         
-      }
-      
-      </style> 
-  </head>
+    .trajnimet{
+        
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 250px 250px 250px 250px;
+        grid-template-areas: "p p" "p1" "p2";
+       
+    }
+}
+video{
+  animation: mymove infinite;
+  animation-duration: 3s;
+}
+</style> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
   <body>
     <nav>
-      <div class="logo">
-Portal</div>
-<input type="checkbox" id="click">
+      <div class="logo">Portal</div>
+      <input type="checkbox" id="click">
       <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
+      <i class="fas fa-bars"></i>
       </label>
-      <ul>
+<ul>
 <li><a  href="portal.html">Home</a></li>
 <li><a class="active" href="Lajme.html">Lajme</a></li>
 <li><a href="Shëndetësia.html">Shëndetësia</a></li>
@@ -60,23 +182,91 @@ Portal</div>
 <li><a href="Argëtim.html">Argëtim</a></li>
 </ul>
 </nav>
-<div class="container">
+<div class="LAJMET">
+  <h1>Lajmet nga vendi</h1>
+  <hr class="vija">
+<main>     
+<div class="Lajmet">
+    <div class="lajmi"> 
+        <img src="lajmi1.jpg" alt="">
+        <a href="https://www.trt.net.tr/shqip/ballkani/2020/12/22/kosove-bie-qeveria-hoti-vendi-drejte-zgjedhjeve-te-reja-parlamentare-1549684" target="blank">
+        <h5>Bie qeveria Hoti, Kushtetuesja e çon Kosovën në zgjedhje brenda 40 ditësh</h5></a>  
+        <p>Gjykata Kushtetuese e Kosovës ka hedhur poshtë votën e deputetit Etem Arifi, vendimtare në formimin e qeverisë së kryesuar nga Avdullah Hoti, dhe ka urdhëruar mbajtjen e zgjedhjeve të parakohshme parlamentare.</p>  
+    </div>
+    <div class="lajmi1">
+        <img src="l2.jpg" alt="">
+        <a href="https://telegrafi.com/mergimtaret-serish-ballafaqohen-pritjet-kufitare-kolona-automjetesh-ne-kufirin-kroaci-slloveni/ "target="blank" >
+          <h5>Mërgimtarët sërish ballafaqohen me pritjet kufitare – kolona automjetesh në kufirin Kroaci-Slloveni</h5>  
+         </a> 
+        <p>Nga 1 janari, bashkatdhetarët që kanë qëndruar për festat e fundvitit në Kosovë, tani po kthehen në vendet ku punojnë dhe veprojnë.Por, sërish edhe për t’u kthyer ata po hasin në pengesa të ndryshme.   </p>
+    
+    </div>
+    
+    <div class="lajmi2">
+        <img src="l1.png" alt="">
+            <a href="https://telegrafi.com/top-ngjarjet-e-vitit-2020-ballafaqimi-pandemine-rrezimi-dy-qeverive-dhe-aktakuzat-e-para-nga-specialja/">
+          <h5>Viti 2020 ka pasur zhvillime të jashtëzakonshme politike dhe nuk ka qenë aspak i lehtë për qytetarët e Kosovës.</h5>  
+         </a> 
+        <p>Përveç ngjarjeve politike, si formimi dhe rënia e dy qeverive, ftesat e Gjykatës Speciale për ish-liderët e UÇK-së, dialogu Kosovë-Serbi etj, vendi është përballur edhe me pandeminë COVID-19.</p>
+    </div>
+   </div> 
+    <div class="A">
+      <a href=""><p>Lexo më shumë</p></a>
+      </div>
+
+<hr class="vija">
+<div class="LAJMET">
+    <h1>Lajmet nga bota</h1>
+    <hr class="vija">
+      
+  <div class="Lajmet">
+      <div class="lajmi"> 
+        <img src="lajmi3.jpg" alt="">   
+        <a href="https://www.dw.com/sq/joe-biden-fiton-zgjedhjet-presidenciale-n%C3%AB-shba/a-55530459" target="blank">
+        <h5>Joe Biden fiton zgjedhjet presidenciale në SHBA</h5> 
+        </a>
+        <p>Kandidati i demokratëve, Joe Biden, sipas raportimeve të njëzëshme të disa mediave amerikane ka fituar zgjedhjet presidenciale në SHBA pas fitores në Pensilvani. Trump duket se nuk e njeh rezultatin.</p>
+      </div>
+      <div class="lajmi1">
+        <img src="lajmi2.jpg" alt="">
+        <a href="https://portalb.mk/723699-masa-te-reja-ne-mbare-boten-pas-variantit-te-ri-te-koronavirusit/" target="blank">
+        <h5>Masa të reja në mbarë botën pas variantit të ri të koronavirusit</h5></a>
+        <p>Kreu i Organizatës Botërore të Shëndetësisë po bën thirrje për intensifikim të studimit të sekuencës gjenetike të koronavirusit pas zbulimit të varianteve të reja.</p>
+      </div>
+      
+      <div class="lajmi2">
+        <img src="l6.jpg" alt="">
+        <a href="https://telegrafi.com/bill-gates-parashikon-qe-jeta-te-kthehet-ne-normalitet-ne-vitin-2021-pas-vitit-shkaterrues/" target="blank">
+        <h5>Bill Gates parashikon që jeta do të ‘kthehet në normalitet’ në vitin 2021 pas ‘vitit shkatërrues’</h5></a>
+        <p>Bill Gates, i cili ka një vlerë neto të vlerësuar prej 120.1 miliardë dollarësh, tha se bota “nuk është në pyll” por beson se ka “lajme të mira që vijnë në vitin 2021” ndërsa vaksinat përhapen.</p>
+      </div>
+      
   
-    <h2>Lajmet ne vend</h2>
-    <main>
-        
-<div class="Table">
-    <table>
-        <tr>
-            <td rowspan="2" id="lajmi_1">
-<img src="lajmi1.jpg" alt="">
+  </div>
+  <div class="A">
+  <a href=""><p>Lexo më shumë</p></a>
+  </div>
+  <hr class="vija" >
 
+    </main>
+<aside>
+ 
+ 
+  <video width="320" height="240"  autoplay loop>
+    
+    <source src="video.mp4" type="video/mp4"> 
+  </video>
+  
+  <video width="320" height="240" autoplay loop>
+    <source src="Covid.mp4" type="video/mp4">
+  </video>
+<div class="reklama">
+  <h5>50% zbritje ne sezonin dimror</h5>
 </div>
-</main>
+</aside>
+</div>
+<footer>
 
-  <aside>
-   
-  </aside>
-</div>
+</footer>
 </body>
 </html>
