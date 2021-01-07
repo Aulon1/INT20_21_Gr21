@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  } 
+  /* Pjesa e fotografis e para */
+.pjesa1{
+    background-image: url(fotoHome.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+
+.pjesa1 h1{
+    background-color: rgba(94, 128, 238, 0.74);
+    color:  white;
+    border: none;
+    font-size: 40px;
+    padding: 12px;
+    border-radius: 15px;
+    width: 40%;
+    letter-spacing: 1px;
+    text-align: center;
+   
+}
+ .pjesa1 h1:hover{
+
+    color: #111;
+    background: #fff;
+ }
+
+
+ .PjesaLajmeve{
+     width: 100%;
+     height: 70vh;
+     margin-top: 30px;
+     
+ }
+ 
+ .Titulli1{
+    width: 20%;
+    margin-left: 4%;
+    }
+
+
+ .Titulli1 h2:hover{
+    opacity: 0.7;
+ }
+
+.Titulli1  hr{
+   background-color: red;
+   width: 60%;
+   height: 3px;
+}
+
+
+
+ .PjesaShendetesis{
+    width: 100%;
+    height: 70vh;
+    margin-top: 30px;
+ }
+
+ .Titulli2{
+   width: 20%;
+   margin-left: 4%;
+   }
+
+
+.Titulli2 h2:hover{
+   opacity: 0.7;
+}
+
+.Titulli2  hr{
+  background-color: rgb(28, 25, 184);
+  width: 70%;
+  height: 3px;
+}
+
+
+
+
+ .PjesaSport{
+    width: 100%;
+    height: 70vh;
+    margin-top: 30px;
+
+ }
+
+ .Titulli3{
+   width: 20%;
+   margin-left: 4%;
+   }
+
+
+.Titulli3 h2:hover{
+   opacity: 0.7;
+}
+
+.Titulli3  hr{
+  background-color: rgb(0, 255, 21);
+  width: 50%;
+  height: 3px;
+}
+
+
+
+
+
+
+ .PjesaMagazina{
+    width: 100%;
+    height: 70vh;
+    margin-top: 30px;
+ }
+
+
+ .Titulli4{
+   width: 20%;
+   margin-left: 4%;
+   }
+
+
+.Titulli4 h2:hover{
+   opacity: 0.7;
+}
+
+.Titulli4  hr{
+  background-color: rgb(146, 0, 151);
+  width: 60%;
+  height: 3px;
+}
+
+
+.PjesaArgetim{
+    width: 100%;
+    height: 70vh;
+    margin-top: 30px;
+ } 
+
+  .Titulli5{
+   width: 20%;
+   margin-left: 4%;
+   }
+
+
+.Titulli5 h2:hover{
+   opacity: 0.7;
+}
+
+.Titulli5  hr{
+  background-color: rgb(204, 253, 28);
+  width: 60%;
+  height: 3px;
+}
+
+
+h2{
+   font-family: Arial,Helvetica,freesans,sans-serif;
+   font-size: 30px;
+}
