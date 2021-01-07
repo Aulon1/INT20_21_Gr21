@@ -261,9 +261,10 @@ footer{
   font-weight: 500;
   cursor: pointer;
   transition: .3s;
+  border-radius: 10px;
 }
 .b button:hover{
-  background: #000;
+  background: white;
 }
 @media screen and (max-width: 900px) {
   footer{
