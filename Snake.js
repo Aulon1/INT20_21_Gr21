@@ -25,8 +25,7 @@
       var dy = 0;
       
       
-      const restartButon = document.getElementById("restart");
-      document.addEventListener("click", gameRestart);
+    
       
       // E merr id e canvasit
       const snakeboard = document.getElementById("snakeboard");

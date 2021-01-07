@@ -85,7 +85,7 @@
 /* Pjesa e barcoletes tpar kshty vazhdon dhe per tri tjerat */
  .barcoleta_1{
      grid-area: p1;
-     background-color: lightyellow;
+     background-color: rgba(86, 221, 24, 0.26);
      border-radius: 10px;
 
  }
@@ -113,7 +113,7 @@
 
  .barcoleta_2{
      grid-area: p2;
-     background-color: lightyellow;
+     background-color: rgba(86, 221, 24, 0.26);
      border-radius: 10px;
  }
 
@@ -143,7 +143,7 @@
 
  .barcoleta_3{
      grid-area: p3;
-     background-color: lightyellow;
+     background-color: rgba(86, 221, 24, 0.26);
      border-radius: 10px;
  }
 
@@ -174,7 +174,7 @@
 
  .barcoleta_4{
      grid-area: p4;
-     background-color: lightyellow;
+     background-color: rgba(86, 221, 24, 0.26);
      border-radius: 10px;
  }
 
