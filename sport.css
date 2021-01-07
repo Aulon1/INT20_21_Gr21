@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px; 
+}
+h3{
+    margin-top: 10;
+}
+.pjeset{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "p p p p1 p2"
+    "p p p p3 p4";
+    text-align: center;
+}
+.pjesa{
+    grid-area: p;
+    background-image: url(sfoto1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pjesa_1{
+    grid-area: p1;
+    background-color: gainsboro;
+    margin: 1px;
+    transition: background-color 2s , transform 2s;
+}
+.pjesa_1:hover{
+    background-color: teal;
+
+
+}
+
+.pjesa_2{
+    grid-area: p2;
+    background-color: gainsboro;
+    transition: background-color 2s , transform 2s;
+    margin: 1px;
+}
+.pjesa_2:hover{
+    background-color: teal;
+  
+}
+
+.pjesa_3{
+    grid-area: p3;
+    background-color: gainsboro;
+    transition: background-color 2s , transform 2s;
+    margin: 1px;
+}
+
+.pjesa_3:hover{
+    background-color:teal;
+}
+
+
+.pjesa_4{
+    grid-area: p4;
+    background-color: gainsboro;
+    transition: background-color 2s , transform 2s;
+    margin: 1px;
+}
+
+.pjesa_4:hover{
+    transform: rotateY(360deg);
+    background-color: teal;
+}
+
+
+.pjeset i{
+    font-size: 100px;
+    margin-top: 10px;
+    columns: #000000;
+}
+
+.pjeset p{
+    font-size: 16px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: inherit;
+}
