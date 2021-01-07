@@ -3,6 +3,13 @@
     padding: 0px;
     margin: 0px; 
 }
+
+h2{
+    width: 90%;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 20px;
+}
 h3{
     margin-top: 10;
 }
@@ -83,4 +90,37 @@ h3{
     padding: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: inherit;
+}
+
+
+.lajmet{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-auto-rows: 350px;
+    border-top:blue solid 3px;
+}
+
+.lajmet h4{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
+} 
+.lajmet img{
+    width: 99%;
+    /*margin: auto;*/
+    height: 200px;
+    object-fit: cover;
+}
+.lajmet> div{
+    background-color: gainsboro;
+    text-align: center;
+}
+.lajmet p{
+    width: 90%;
+    margin: auto;
+    padding-top: 15px;
 }
