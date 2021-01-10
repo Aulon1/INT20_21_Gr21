@@ -143,8 +143,8 @@ function drawApple(){
 //Funksion qe e ben te rastesishem ushqimin po dhe rrit scoren dhe bishtin pas ngrenjes dhe ka nje audio
 function checkAppleCollision(){
     if(appleX === headX && appleY == headY){
-        appleX = Math.floor(Math.random() * tileCount);
-        appleY = Math.floor(Math.random() * tileCount);
+        appleX = Math.floor(Math.random() * 50);
+        appleY = Math.floor(Math.random() * 25);
         tailLength++;
         score++;
         gulpSound.play();
