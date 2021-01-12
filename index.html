@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.5.1.min.js" src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script type="text/javascript">
+       $(function() {
+        $(".b1").click(function(){
+          $(".j1").toggle();
+        });
+        }); 
+        $(function() {
+        $(".b2").click(function(){
+          $(".j2").fadeToggle(1000);
+        });
+        });  
+        $(function() {
+        $(".b3").click(function(){
+          $(".j3").slideToggle(1000);
+        });
+        });
+        $(function() {
+        $(".b4").click(function(){
+          $(".j4").fadeToggle(1000, function(){
+      alert("Shtypni përsëri që të shfaqni ose fshehni");
+        });
+        });
+        });
+        $(function(){ 
+        $(".Titulli5").click(function(event){
+        alert("Shtype më lart faqen Argëtimi për të kaluar tek ajo faqe!");
+        event.preventDefault();   
+        });  
+        });
+        $(function(){
+        $(".f1").submit(function(){
+          alert("Te dhenat tuaja u pranuan me sukses");
+        });
+        });
+        $(function(){
+        var val=$(".pjesa1").text();
+        alert(val);
+        });
+        $(function(){
+        $(".l1").text("Lajmet");
+        });
+        $(function(){
+        $("#sh1").append("i");
+        });
+        $(function(){
+        $(".hekja").removeAttr("class");
+        });
+        $(function(){
+        $(".b5").click(function() {
+        $(".j5").animate({width:'900px'},1000);  
+        });
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portal.css">
+
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+Portal</div>
+<input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+<li><a class="active" href="#">Home</a></li>
+<li><a href="Lajme.html">Lajme</a></li>
+<li><a href="Shëndetësia.html">Shëndetësia</a></li>
+<li><a href="Sport.html">Sport</a></li>
+<li><a href="Magazina.html">Magazina</a></li>
+<li><a href="Argëtim.html">Argëtim</a></li>
+</ul>
+</nav>
+
+
+
+
+<div class="pjesa1">
+  <h1>Mirë se vini në Portal
+
+    <hr>
+  </h1>
+  
+</div>
+
+<div class="PjesaLajmeve">
+  <div class="Titulli1">
+  <a href="Lajme.html" style="text-decoration: none; color: black;">
+   <h2 class="l1">Lajme</h2>
+   <hr>
+   </a>
+   <button class="b1" > Hiq ose shiko</button>
+   </div>
+   <div class="j1">lajmi fundit</div>
+</div>
+
+<div class="PjesaShendetesis">
+  <div class="Titulli2">
+  <a href="Shëndetësia.html" style="text-decoration: none; color: black;">
+    <h2 class="hekja">Shëndetësia</h2>
+    <hr>
+  </a>
+  <button class="b2" > Hiq ose shiko</button>
+  </div>
+  <div class="j2">
+    <figure  >
+      <img src="MasatKryesore.jpg" height="200px" width="50%" align="left" alt="Masat Kryesore ndaj Covid-19"/>
+      </figure>
+      <figure  > 
+        <img src="https://images.bisnis-cdn.com/posts/2020/06/10/1250747/vaksin-virus-corona-covid-19.jpg" align="right" height="200px" width="50%" alt="vaksin-virus-corona-covid-19"> 
+      </figure>
+    </br></br></br></br></br></br></br></br></br>
+     <article style="border:1px solid black; width: 49%; height:180px;position:absolute;"> Deri tani janë aprovuar disa vaksina nga Kina,SHBA,Rusia por disa prej tyre nuk i kanë kaluar të gjitha fazat pë tu përdorur. Vaksina Pfizer dhe Biontech është një vaksinë nga Gjermania që u aprovua në shumë vende dhe poashtu po përdoret në disa prej tyre. Gjithashtu vaksina pritet të vij edhe në Shqipëri dhe Kosovë por nuk dihet data e saktë. Kjo vaksinë është 95% efektive, një përqindje e lartë dhe ndër më të lartat kundrejt vaksinave tjera. Vetëm 5% e tyre kanë pasur efekte anësore si kokëdhimbje dhe lodhje.  </article>
+    <article style="border:1px solid black; width: 49%; height:180px;position:absolute; right:0 ;"> Sa më shumë përhapet një virus aq më shumë mutacione(variante) shfaqen.Një prej varianteve më të përfolur është ai britanik që përmban mbi 20 mutacione, tetë prej të cilave në zgjatimet që i shërbejnë virusit për të penetruar dhe infektuar qelizat e njeriut. Këto zgjatime janë në shenjestër të kurave mjekësore dhe vaksinave kundër koronavirusit.Shkencëtarët besojnë se vaksinat që janë miratuar deri tani do të jenë të efektshme edhe kundër variantit të ri, por ende vazhdon puna për ta konfirmuar këtë bindje.Deri atëherë zbatoni masat. 
+       </article></br></br></br></div>
+</div>
+
+<div class="PjesaSport">
+  <div class="Titulli3">
+  <a href="Sport.html" style="text-decoration: none; color: black;"> 
+    <h2>Sport</h2>
+    <hr>
+  </a>
+  <button class="b3" > Hiq ose shiko</button>
+  </div>
+  <div class="j3">lajmi fundit</div>
+</div>
+
+<div class="PjesaMagazina">
+  <div class="Titulli4">
+  <a href="Magazina.html" style="text-decoration: none; color: black;"> 
+    <h2>Magazina</h2>
+    <hr>
+  </a>
+  <button class="b4" > Hiq ose shiko</button>
+  </div> 
+  <div class="j4">lajmi fundit</div>
+</div>
+
+
+
+<div class="PjesaArgetim">
+  <div class="Titulli5">
+  <a href="Argëtim.html" style="text-decoration: none; color: black;"> 
+    <h2 id="sh1">Argëtim</h2>
+    <hr>
+  </a>
+  </div>
+  <button class="b5" > Rrite</button>
+<div class="j5">
+  <img src="h7.1.jpg" style="width:100%">
+  
+</div>
+</div>
+
+
+
+<footer>
+  <div class="foteri">
+  <div class="f">
+    <h2>
+      About us
+    </h2>
+    <div class="about">
+      <p>
+        Te gjitha te drejtat jane te autorizuara dhe nuk lejohet shperndarja e materialeve pa lejen tone.
+      </p>
+      <div class="social">
+        <i class="fab fa-instagram"></i>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-youtube"></i>
+    <i class="fab fa-google"></i>
+      </div>
+    </div>
+  </div>
+  <div class="center">
+    <h2>
+      Address
+    </h2>
+    <div class="about">
+      <div class="pa">
+        <span class="fas fa-map-marker-alt"></span>
+          <span class="text">Prishtinë</span>
+        </div>
+<div class="phone">
+          <span class="fas fa-phone-alt"></span>
+          <span class="text">+383 44 444 444</span>
+      </div>
+      <div class="email">
+        <span class="fas fa-envelope"></span>
+        <span class="text">Portal@example.com</span>
+      </div>
+    </div>
+  </div>
+  <div class="kontakti">
+  <h2>Contact us</h2>
+<div class="about">
+  <form class="f1" action="#" >
+<div class="email">
+  <div class="text">Email*</div>
+  <input type="email" required>
+</div>
+<div class="msg">
+  <div class="text">Message*</div>
+  <textarea  cols="30" rows="1" required></textarea>
+  <div class="b">
+    <button class="sub1" type="submit">
+      Send
+    </button>
+  </div>
+  
+  
+</div>
+  </form>
+</div>
+
+  </div>
+</footer>
+</body>
+</html>
