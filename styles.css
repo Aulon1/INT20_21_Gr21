@@ -1,0 +1,527 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Poppins', sans-serif;
+
+} 
+
+
+
+/*style i navit qe i permban mbrenda listat dhe logon*/
+
+
+
+nav{
+
+  display: flex;
+
+  height: 80px;
+
+  width: 100%;
+
+  background: #1b1b1b;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 50px 0 100px;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+
+
+/* style per logon ky qasmi me nav ne clasen e loges */
+
+
+
+nav .logo{
+
+  color: #fff;
+
+  font-size: 35px;
+
+  font-weight: 600;
+
+}
+
+
+
+
+
+/*style i listave me an te navit */
+
+nav ul{
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  list-style: none;
+
+}
+
+nav ul li{
+
+  margin: 0 5px;
+
+}
+
+
+
+/*style i linqeve brenda listave ku edhe kemi perdor transiton per te gjitha linqet brenda listav*/
+
+
+
+nav ul li a{
+
+  color: #f2f2f2;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  padding: 8px 15px;
+
+  border-radius: 5px;
+
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+
+}
+
+
+
+/*style i linkut te par me clasen aktive ku i kemi dhen ngjyr*/
+
+nav ul li a.active{
+
+  color: #111;
+
+  background: #fff;
+
+
+
+}
+
+/*style i linqeve me hover qe kur ti afrojm mausin marrin ngjyr linqet*/
+
+nav ul li a:hover{
+
+  color: #111;
+
+  background: #fff;
+
+}
+
+
+
+/*style pjesa e atij butonit kur e zvoglojm faqen qe shfaqet qe esht i mirrem nga google ajo figura*/
+
+nav .menu-btn i{
+
+  color: #fff;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  display: none;
+
+}
+
+/*style i inputit me type checkbox*/
+
+input[type="checkbox"]{
+
+  display: none;
+
+}
+
+
+
+/*style per screen max te tabletav 1000px*/
+
+@media (max-width: 1000px){
+
+  nav{
+
+    padding: 0 20px 0 30px;
+
+  }
+
+}
+
+
+
+/*style per screen te telefonava se si duket ne telefona*/
+
+@media (max-width: 960px) {
+
+  nav .menu-btn i{
+
+    display: block;
+
+    }
+
+    /* style i butnit te menu qe kur zvoglohet hapet e pasta per ta mbyllur shfaq shejen e x */
+
+  #click:checked ~ .menu-btn i:before{
+
+    content: "\f00d";
+
+  }
+
+  nav ul{
+
+    position: fixed;
+
+    top: 80px;
+
+    left: -100%;
+
+    background: #111;
+
+    height: 100vh;
+
+    width: 100%;
+
+    text-align: center;
+
+    display: block;
+
+    transition: all 0.3s ease;
+
+  }
+
+  #click:checked ~ ul{
+
+    left: 0;
+
+  }
+
+  nav ul li{
+
+    width: 100%;
+
+    margin: 40px 0;
+
+  }
+
+  nav ul li a{
+
+    width: 100%;
+
+    margin-left: -100%;
+
+    display: block;
+
+    font-size: 20px;
+
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  }
+
+  #click:checked ~ ul li a{
+
+    margin-left: 0px;
+
+  }
+
+  nav ul li a.active{
+
+    background: none;
+
+    color: cyan;
+
+
+
+  }
+
+  nav ul li a:hover{
+
+    background: none;
+
+    color: cyan;
+
+  }
+}
+body {
+    margin:auto
+}
+.container {
+width: 90%;
+margin:auto;
+margin-top: 2px;
+background-color: white;
+text-align: left;
+}
+main{
+    width: 65%;
+    float: left;
+    margin-top: 2px;
+
+
+}
+aside{
+    width: 35%;
+    height: 490px;
+    background-color: white;
+    float:right;
+    
+}
+.ballina table{
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: gainsboro solid 2px;
+}
+.ballina td{
+    height:260px;
+}
+
+#ballina_1{
+    width: 65%;
+    padding :0px;
+}
+#ballina_1 img {
+    position: relative;
+    bottom: 45px;
+
+}
+.ballina img{
+    width: 97%;
+    object-fit:cover;
+}
+p{
+
+    padding-right: 20px;
+}
+h2{
+    margin:5px ;
+
+}
+h1,h3,h4{
+    font-size: 15px;
+
+}
+h5{
+    font-size: 20px;
+}
+.vija{
+    width: 100%;
+    height: 2px;
+    font-size: 20px;
+    background-color: tomato;
+    border: none;
+}
+.article{
+    width: 49.6%;
+    display: inline-block;
+    padding-bottom: 20px; ;
+}
+.article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.article h4{
+    margin-bottom:20px;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+.reklama {
+    width: 90%;
+    margin:30px auto;
+    height: 350px;
+    color: indigo;
+    background-image: url(como.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.reklama h5{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: indianred;
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+    padding:10px;
+    position: relative;
+    top:220px;
+}
+.reklama_1 {
+    width: 90%;
+    margin:30px auto;
+    height: 400px;
+    color: indigo;
+    background-image: url(como1.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.reklama_1 h5{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: indianred;
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+    padding:10px;
+    position: relative;
+    top:220px;
+}
+/*footer*/
+
+footer{
+  clear: both;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+  color: #f2f2f2;
+ 
+}
+.foteri{
+  display: flex;
+ 
+}
+.f{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.f h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.about{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.about::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+ }
+.about:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+}
+.social{
+  margin: 20px 0 0 0;
+}
+.social i{
+  padding: 0 2px;
+}
+.social i{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s ;
+}
+.social i:hover{
+  background-color: #f12020;
+}
+.about span{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  transition: 0.3s ;
+}
+.about span:hover{
+  background: #f12020;
+}
+.about text{
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.phone{
+  margin: 15px 0;
+}
+.form text{
+  font-size: 15px;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.msg{
+  margin-top: 10px;
+}
+.form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: white;
+  padding-left: 10px;
+  border: 1px solid white;
+}
+.form input:focus{
+  outline-color: #3498db;
+}
+.form textarea:focus{
+  outline-color: #3498db;
+}
+.form input{
+  height: 35px;
+}
+.b{
+  margin-top: 10px;
+}
+.b button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 10px;
+}
+.b button:hover{
+  background: white;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .foteri{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .f{
+    margin: 5px 0;
+  }
+}

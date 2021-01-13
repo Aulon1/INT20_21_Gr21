@@ -326,46 +326,62 @@
  }
 
 
-/* Titulli i tret Snake game */
-.titulli3{
-  text-align: center;
-  margin-top: 20px;
 
-}
-
-/* Vija posht titullit */
-.titulli3 hr{
-  height: 4px;
-  background-color: black;
-
-}
  
-.pjesa4{
-  height: 130vh;
+ .pjesa4{
+  height: 160vh;
+
 }
 
-/* id e snake board ku pozicionohet ne screen */
-#snakeboard {
-  position: absolute;
-  margin-top: 15%;
-  margin-left: 50%;
-  transform: translate(-50%, -50%);
+.snake{
+  margin-top: 5%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Pjesa e pikeve ne screen */
-#score {
+
+.pjesa4 h2{
+  margin-top: 4%;
+  margin-left: 4%;
+
+}
+
+.udhezimet{
+     margin-top: 3%;
+     display: grid;
+     grid-template-columns: repeat(2 ,1fr);
+     grid-template-rows: 400px;
+     grid-template-areas: 
+     "p1 p2"
+}
+
+.udhezimet h3{
+  font-size: 22px;
+}
+
+.levizjet{
+  grid-area: p1;
   text-align: center;
-  font-size: 140px;
 }
-.pjesaButonit{
-  width: 70%;
-  height: 30px;
-}
- #restart{
-   position: absolute;
-  margin-left:  50%;
- }
 
+.levizjet p{
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.rregullat{
+  grid-area: p2;
+}
+
+.rregullat ul{
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
 
 
 

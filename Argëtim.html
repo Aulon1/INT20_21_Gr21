@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" dir="ltr">
+<html manifest="cache.appcache" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
@@ -187,19 +187,61 @@ Portal</div>
   }
   </script>
   
-  <div class="titulli3">
-    <h1>Snake Game</h1>
-    <hr>
-  </div>
+
   <div class="pjesa4">
-  <div id="score">0</div>
-  <canvas id="snakeboard" width="1000" height="500"></canvas>
-  
-  <script src="Snake.js"> </script>
-  </div>
+    <div class="titulli3">
+     <h1>Snake Game</h1>
+     <hr>
+    </div>
+    <div class="snake">
+     <canvas id="game" width="1000" height="500">
+       </canvas>
+       </div>
+      <h2>Udhëzimet Për Lojen:
+        <hr>
+      </h2>
+      
+      <div class="udhezimet">
+       <div class="levizjet">
+         <h3>Lëvizjet</h3>
+         <br>
+      
+        <p>W: Lëviz lart. </p>
+        <br>
+        <p>S: Lëviz posht.</p>
+        <br>
+        <p>D: Lëviz djathtas.</p>
+        <br>
+        <p>A: Lëviz majtas.</p>
+      
+    
+       </div>
+      <div class="rregullat">
+          <h3>Rregullat</h3>
+          <br>
+          <ul>
+          <li><p>Nëse godet muret ose kufijt humbë!</p></li>
+          <br>
+          <li><p>Poashtu nëse kafshon veten përseri humbë!</p></li>
+          </ul>
+      </div>
+       
+    </div>
+    
+    <script src="Snake.js"></script>
+    </div>
+    
+
+
+
+
+
+
+
   <!--Footeri-->
-<footer>
+<footer >
   <div class="foteri">
+    <!--Pjesa e par e footerit About us ,inkonat -->
   <div class="f">
     <h2>
       About us
@@ -217,6 +259,7 @@ Portal</div>
       </div>
     </div>
   </div>
+  <!--Pjesa ne mes e footerit -->
   <div class="center">
     <h2>
       Address
@@ -237,6 +280,8 @@ Portal</div>
     </div>
   </div>
   <div class="kontakti">
+
+  <!--Pjesa e fundit e footerit, contat as  me forma -->
   <h2>Contact us</h2>
 <div class="about">
   <form action="#" >
@@ -252,15 +297,7 @@ Portal</div>
       Send
     </button>
   </div>
-  
-  
-</div>
   </form>
-</div>
-
-  </div>
 </footer>
-
-
 </body>
 </html>
