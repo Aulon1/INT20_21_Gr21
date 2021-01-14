@@ -5,8 +5,20 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Argëtim.css">
+    <script src="jquery-3.5.1.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script type="text/javascript">
+       $(function() {
+       $(".b2").click(function(){
+         $(".udhezimet").fadeToggle(1000);
+       });
+       });
+       </script>
+
+
   </head>
   <body>
     <nav>
@@ -190,17 +202,18 @@ Portal</div>
 
   <div class="pjesa4">
     <div class="titulli3">
-     <h1>Snake Game</h1>
+    <h1>Snake Game</h1>
      <hr>
     </div>
     <div class="snake">
      <canvas id="game" width="1000" height="500">
        </canvas>
        </div>
+       
       <h2>Udhëzimet Për Lojen:
         <hr>
       </h2>
-      
+      <button class="b2">Shiko ose Largo</button>
       <div class="udhezimet">
        <div class="levizjet">
          <h3>Lëvizjet</h3>
@@ -231,6 +244,11 @@ Portal</div>
     <script src="Snake.js"></script>
     </div>
     
+
+
+
+
+
 
 
 
