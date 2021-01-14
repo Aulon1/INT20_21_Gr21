@@ -10,8 +10,10 @@ h2{
     font-size: 35px;
     margin-top: 20px;
 }
+
+
 h3{
-    margin-top: 10;
+    margin-top: 10px;
 }
 .pjeset{
     width: 90%;
@@ -99,8 +101,8 @@ h3{
     display: grid;
     grid-gap: 4px;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-    grid-auto-rows: 350px;
-    border-top:blue solid 3px;
+    grid-auto-rows: 320px;
+    border-top:blue solid 2px;
 }
 
 .lajmet h4{
@@ -117,10 +119,27 @@ h3{
 }
 .lajmet> div{
     background-color: gainsboro;
-    text-align: center;
+    text-align: left;
 }
 .lajmet p{
     width: 90%;
     margin: auto;
     padding-top: 15px;
+    font-size: 17px;
+    font-weight: 750;
+    color:navy;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lajmet a:link{
+    color:hex #000033;
+    text-decoration: none;
+    background-color: transparent;
+}
+.lajmet a :hover{
+    text-decoration: underline;
+    color: hex #000033;
+}
+.lajmet a:active{
+    color: hex #000033;
+    background-color: transparent;
 }

@@ -22,64 +22,72 @@ aside{
     width: 25%;
     float: right;
 }
-.Lajmet{
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 350px 350px;
-    grid-template-areas: "p  p p1 " "p p  p2 ";
-text-align: left;
-}
-.LAJMET img{
+.Table table{
+    background-color: white;
     width: 100%;
-    bottom: 100px;
+
+    border-bottom:gainsboro solid 2px;
+    border-collapse: collapse;
+   
+}
+.Table td{
+    height: 340px;
+}
+.Table img{
+    width: 97%; 
 }
 
-.Lajmet h5{
-    font-size: 13px;
+.Table h2{
+    text-decoration: none;
+    position: static;
+    font-size: 15px;
 }
-.Lajmet p{
+.Table p{
+  position: static;
+    font-size: 15px;
+}
+
+#lajmi_1{
+    width: 65%;
+    padding: 0px;  
+}
+
+#lajmi_1 img{
+    position: relative;
+    bottom: 95px;
+  
+}
+#lajmi_1  p{
+    position: relative;
+    bottom: 80px;
     font-size: 13px;
     padding: 10px;
 }
-#lajmi img{
-    bottom: 100px;
+#lajmi_1  h2{
+    position: relative;
+    bottom: 80px;
 }
-.lajmi h5{
-font-size: 20px;
+.LAJMET div{
+  background-color: white;
+  
 }
-.lajmi{
-    grid-area : p;   
-    word-wrap: break-word;
-}
-.lajmi1{
-grid-area: p1;
-word-wrap: break-word;
-
-}
-.lajmi2{
-grid-area: p2;
-
-  word-wrap: break-word;
-
-}
-
-.Lajmet a:link {
+/** linku ne tabel, kur eshte aktiv, vizitohet etj**/
+.Table a:link {
     color: black;
     background-color: transparent;
     text-decoration: none;
 }
-.Lajmet a:visited {
+.Table a:visited {
     color: rgb(29, 29, 85);
     background-color: transparent;
     text-decoration: none;
 }
-.Lajmet a:hover {
+.Table a:hover {
     color: black;
     background-color: transparent;
     text-decoration: none;
 }
-.Lajmet a:active {
+.Table a:active {
     color: black;
     background-color: transparent;
     text-decoration: none;
@@ -95,82 +103,6 @@ grid-area: p2;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
-.reklama:hover{
-  
-    transform: rotateX(360deg);
-  background-color: teal;
-
-}
-.reklama {
-  
-  width: 90%;
-  margin: 30px auto;
-  height: 450px;
-  background-image: url(r.jpg);
-  background-size: cover ;
-  background-position: center;
-  transition: background-color 2s, transform 2s;
- 
-}
-.reklama h5{
-  background-color: black;
-  color: white;
-font-size: 25px;
-position: relative;
-top: 200px;
-margin: auto;
-}
-.aside h2{
-  text-align: center;
-  font-size: 24px;
- 
-}
-.aside h5{
-  background-color: blanchedalmond;
-  color: black;
-  font-size: 100px;
-  position: center;
-  top: 300px;
-  margin: auto;
-  text-align: justify;
-}
-
-@media(max-width:1023px){
-   
-
-    .Lajmet{
-        
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 350px 250px  250px;
-        grid-template-areas: 
-        "p p "
-        "p1 p2 ";
-       
-    }
-}
-@media(max-width:767px){
-    
-    .trajnimet{
-        
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: 250px 250px 250px 250px;
-        grid-template-areas: "p p" "p1" "p2";
-       
-    }
-}
-/*
-@media screen and (max-width: 900px) {
-  .LAJMET{
-    position: relative;
-    bottom: 0px;
-  }
-  .Lajmet{
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 5px 0;
-  
-}
-*/
 
 </style> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -194,95 +126,104 @@ margin: auto;
 </ul>
 </nav>
 <div class="LAJMET">
+  
   <h1>Lajmet nga vendi</h1>
   <hr class="vija">
-<main>     
-<div class="Lajmet">
-    <div class="lajmi"> 
-        <img src="lajmi1.jpg" alt="">
-        
-        <h5>Bie qeveria Hoti, Kushtetuesja e çon Kosovën në zgjedhje brenda 40 ditësh</h5>
-        <p>Gjykata Kushtetuese e Kosovës ka hedhur poshtë votën e deputetit Etem Arifi, vendimtare në formimin e qeverisë së kryesuar nga Avdullah Hoti, dhe ka urdhëruar mbajtjen e zgjedhjeve të parakohshme parlamentare.</p>  
-        <a href="Lajmi_1.html" target="blank">Lexo më shumë</a>
-      </div>
-    <div class="lajmi1">
-        <img src="l2.jpg" alt=""> <a href="Lajmi_2.html" target="blank">
-          <h5>Mërgimtarët sërish ballafaqohen me pritjet kufitare – kolona automjetesh në kufirin Kroaci-Slloveni</h5>  </a>
-         
-        <p>Nga 1 janari, bashkatdhetarët që kanë qëndruar për festat e fundvitit në Kosovë, tani po kthehen në vendet ku punojnë dhe veprojnë.Por, sërish edhe për t’u kthyer ata po hasin në pengesa të ndryshme.   </p>
-       
-    </div>
-    
-    <div class="lajmi2">
-        <img src="l1.png" alt="">
+<main>
+  <!--Tabela e par lajmet nga vendi -->
+  <div class="Table"> 
+    <table>
+      <tr>
+           <td rowspan="2" id="lajmi_1">
+            <img src="lajmi1.jpg" alt=""><a href="Lajmi_1.html" target="blank">
+            <h2>Bie qeveria Hoti, Kushtetuesja e çon Kosovën në zgjedhje brenda 40 ditësh</h2></a>
+            <p>Gjykata Kushtetuese e Kosovës ka hedhur poshtë votën e deputetit Etem Arifi, vendimtare në formimin e qeverisë së kryesuar nga Avdullah Hoti, dhe ka urdhëruar mbajtjen e zgjedhjeve të parakohshme parlamentare.</p>  
+            
+            </td>
+            <td id="lajmi_2">
+              
+              <img src="l2.jpg" alt=""> <a href="Lajmi_2.html" target="blank">
+                <h5>Mërgimtarët sërish ballafaqohen me pritjet kufitare – kolona automjetesh në kufirin Kroaci-Slloveni</h5>  </a>
+              <p>Nga 1 janari, bashkatdhetarët që kanë qëndruar për festat e fundvitit në Kosovë, tani po kthehen në vendet ku punojnë dhe veprojnë.Por, sërish edhe për t’u kthyer ata po hasin në pengesa të ndryshme.   </p>
+  
+            </td>
+       </tr>
+       <tr>
+            <td id="lajmi_3">
+              <img src="l1.png" alt="">
             <a href="Lajmi_3.html" target="blank">
           <h5>Viti 2020 ka pasur zhvillime të jashtëzakonshme politike dhe nuk ka qenë aspak i lehtë për qytetarët e Kosovës.</h5>  
          </a> 
         <p>Përveç ngjarjeve politike, si formimi dhe rënia e dy qeverive, ftesat e Gjykatës Speciale për ish-liderët e UÇK-së, dialogu Kosovë-Serbi etj, vendi është përballur edhe me pandeminë COVID-19.</p>
-    </div>
-   </div> 
+             </td>
+       </tr>
+    </table>
+  </div>
+  
     <div class="A">
       <a href=""><p>Lexo më shumë</p></a>
       </div>
-
+      <h1>Lajmet nga bota</h1>
 <hr class="vija">
-<div class="LAJMET">
-    <h1>Lajmet nga bota</h1>
-    <hr class="vija">
-      
-  <div class="Lajmet">
-      <div class="lajmi"> 
-        <img src="lajmi3.jpg" alt="">   
-       
-        <h5>Joe Biden fiton zgjedhjet presidenciale në SHBA</h5> 
-        
-        <p>Kandidati i demokratëve, Joe Biden, sipas raportimeve të njëzëshme të disa mediave amerikane ka fituar zgjedhjet presidenciale në SHBA pas fitores në Pensilvani. Trump duket se nuk e njeh rezultatin.</p>
-        <a href="Lajmi_4.html" target="blank">Lexo më shumë</a>
-      </div>
-      <div class="lajmi1">
-        <img src="lajmi2.jpg" alt="">
-        <a href="Lajmi_5.html" target="blank">
-        <h5>Masa të reja në mbarë botën pas variantit të ri të koronavirusit</h5></a>
-        <p>Kreu i Organizatës Botërore të Shëndetësisë po bën thirrje për intensifikim të studimit të sekuencës gjenetike të koronavirusit pas zbulimit të varianteve të reja.</p>
-      </div>
-      
-      <div class="lajmi2">
-        <img src="l6.jpg" alt="">
+<!--Tabela e dyt lajmet nga bota-->
+  <div class="Table"> 
+    <table>
+      <tr>
+           <td rowspan="2" id="lajmi_1">
+            <img src="lajmi3.jpg" alt="">   
+            <a href="Lajmi_4.html" target="blank">
+            <h2>Joe Biden fiton zgjedhjet presidenciale në SHBA</h2> </a>
+            <p>Kandidati i demokratëve, Joe Biden, sipas raportimeve të njëzëshme të disa mediave amerikane ka fituar zgjedhjet presidenciale në SHBA pas fitores në Pensilvani. Trump duket se nuk e njeh rezultatin.</p>
+            
+            </td>
+            <td id="lajmi_2">
+              <img src="lajmi2.jpg" alt="">
+              <a href="Lajmi_5.html" target="blank">
+              <h5>Masa të reja në mbarë botën pas variantit të ri të koronavirusit</h5></a>
+              <p>Kreu i Organizatës Botërore të Shëndetësisë po bën thirrje për intensifikim të studimit të sekuencës gjenetike të koronavirusit pas zbulimit të varianteve të reja.</p>
+  
+            </td>
+       </tr>
+       <tr>
+            <td id="lajmi_3">
+              <img src="l6.jpg" alt="">
         <a href="Lajme_6.html" target="blank">
         <h5>Bill Gates parashikon që jeta do të ‘kthehet në normalitet’ në vitin 2021 pas ‘vitit shkatërrues’</h5></a>
         <p>Bill Gates, i cili ka një vlerë neto të vlerësuar prej 120.1 miliardë dollarësh, tha se bota “nuk është në pyll” por beson se ka “lajme të mira që vijnë në vitin 2021” ndërsa vaksinat përhapen.</p>
-      </div>
-      
-  
+             </td>
+       </tr>
+    </table>
   </div>
   <div class="A">
   <a href=""><p>Lexo më shumë</p></a>
-  </div>
+  </div> 
   <hr class="vija" >
-
+ 
     </main>
+</div>
 <aside>
- 
- 
+  <br>
+  <!--Videot anash ne aside -->
   <video width="320" height="240"  autoplay loop>
-    
-    <source src="video.mp4" type="video/mp4"> 
-  </video>
-  
+    <source src="stay.mp4" type="video/mp4"> 
+  </video>  <hr class="vija" >
+  <br>
   <video width="320" height="240" autoplay loop>
     <source src="Covid.mp4" type="video/mp4">
   </video>
-<div class="reklama">
-  <h5>50% zbritje ne sezonin dimror</h5>
-</div>
+  <hr class="vija" >
+  <br>
+  <h2>Harta e shperndarjes se COVID-19</h2>
+  <video width="320" height="240" autoplay loop>
+    <source src="harta.mp4" type="video/mp4">
+  </video>
+  <hr class="vija" >
 </aside>
 </div>
-</div>
-<div>
-<h2>Kontakti</h2>
-</div>
+<!--Footeri-->
 <footer >
   <div class="foteri">
+    <!--Pjesa e par e footerit About us ,inkonat -->
   <div class="f">
     <h2>
       About us
@@ -300,6 +241,7 @@ margin: auto;
       </div>
     </div>
   </div>
+  <!--Pjesa ne mes e footerit -->
   <div class="center">
     <h2>
       Address
@@ -321,7 +263,7 @@ margin: auto;
   </div>
   <div class="kontakti">
 
-  
+  <!--Pjesa e fundit e footerit, contat as  me forma -->
   <h2>Contact us</h2>
 <div class="about">
   <form action="#" >
@@ -337,13 +279,7 @@ margin: auto;
       Send
     </button>
   </div>
-  
-  
-</div>
   </form>
-</div>
-
-  </div>
 </footer>
 </body>
 </html>

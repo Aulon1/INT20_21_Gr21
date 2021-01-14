@@ -159,31 +159,26 @@ footer{
   position: relative;
 }
 .about::before{
-  
     position: absolute;
     content: '';
     top: -10px;
     height: 2px;
     width: 100%;
     background: #1a1a1a;
-  }
-  .about:after{
+ }
+.about:after{
     position: absolute;
     content: '';
     height: 2px;
     width: 15%;
     background: #f12020;
     top: -10px;
-  }
-
-
+}
 .social{
   margin: 20px 0 0 0;
 }
-
 .social i{
   padding: 0 2px;
-
 }
 .social i{
   height: 40px;
@@ -194,11 +189,9 @@ footer{
   font-size: 18px;
   border-radius: 5px;
   transition: 0.3s ;
-
 }
 .social i:hover{
   background-color: #f12020;
-
 }
 .about span{
   font-size: 1.4375rem;
@@ -223,7 +216,6 @@ footer{
 .phone{
   margin: 15px 0;
 }
-
 .form text{
   font-size: 15px;
   margin-bottom: 2px;
@@ -278,4 +270,55 @@ footer{
   .f{
     margin: 5px 0;
   }
+}
+/**Pjesa e lajmeve ne home**/
+
+.lajme p{
+position: static;
+  font-size: 15px;
+   text-align: left;
+}
+.lajme{
+  float: left;
+  width: 33.3%;
+max-width: 450px;
+text-align: center;
+}
+.lajme img{
+  width: 90%;
+  bottom: 15px;
+  
+}
+.lajme h2{
+  text-decoration: none;
+  margin: auto;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+}
+.A p{
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+.lajme a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+.lajme a:visited {
+  color: rgb(29, 29, 85);
+  background-color: transparent;
+  text-decoration: none;
+}
+.lajme a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+.lajme a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }
