@@ -30,12 +30,6 @@
         });
         });
         });
-        $(function(){ 
-        $(".Titulli5").click(function(event){
-        alert("Shtype më lart faqen Argëtimi për të kaluar tek ajo faqe!");
-        event.preventDefault();   
-        });  
-        });
         $(function(){
         $(".f1").submit(function(){
           alert("Te dhenat tuaja u pranuan me sukses");
@@ -50,11 +44,7 @@
         $(function(){
         $(".hekja").removeAttr("class");
         });
-        $(function(){
-        $(".b5").click(function() {
-        $(".j5").animate({width:'900px'},1000);  
-        });
-        });
+       
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portal.css">
@@ -94,7 +84,7 @@ Portal</div>
   <a href="Lajme.html" style="text-decoration: none; color: black;">
    <h2 class="l1">Lajmet e fundit</h2>
    </a><hr>
-
+   <button class="b1" > Hiq ose shiko</button>
    </div>
    <div class="j1">
 <div class="lajmet">
@@ -123,10 +113,9 @@ Portal</div>
 </div>
 </div>
 </div>
-<br><div class="A">
-<button class="b1" > <a href="Lajme.html"><p>Lexo më shumë</p></a></button>
-
-    
+<br>
+<div class="A">
+    <a href="Lajme.html"><p>Lexo më shumë</p></a>
     </div>
   
 
@@ -184,12 +173,97 @@ Portal</div>
     <hr>
   </a>
   </div>
-  <button class="b5" > Rrite</button>
-<div class="j5">
-  <img src="h7.1.jpg" style="width:100%">
-  
+
+<div class="titulliA"><h2>Foto Qesharake</h2><hr></div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="h6.1.jpg" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="h2.2.jpg" style="width:100%">
+    
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="h3.1.jpg" style="width:100%">
+     
+    </div>
+    
+    
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="h4.1.jpg" style="width:100%">
+     
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="h1.1.jpg" style="width:100%">
+     
+    </div>
+    
+    
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="h7.1.jpg" style="width:100%">
+     
+    </div>
+    
+    
+    <a class="prapa" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="para" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span> 
+    </div>
+  </div>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
 </div>
-</div>
+
 <!--Footeri-->
 <footer >
   <div class="foteri">
@@ -256,3 +330,12 @@ Portal</div>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
