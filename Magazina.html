@@ -147,6 +147,18 @@ Portal</div>
       <i class="fab fa-youtube"></i>
       <i class="fab fa-google"></i>
         </div>
+      </br>
+      <p id="ditaf"></p>
+  
+  <script>
+  
+  if (typeof(Storage) !== "undefined") {
+   localStorage.setItem("Data formimit", "Ky portal u formua me <b>16-01-2021</b>.");
+    document.getElementById("ditaf").innerHTML = localStorage.getItem("Data formimit");
+  } else {
+    document.getElementById("ditaf").innerHTML = "Browseri juaj nuk e perkrah localStorage";
+  }
+  </script>
       </div>
     </div>
     <!--Pjesa ne mes e footerit -->
