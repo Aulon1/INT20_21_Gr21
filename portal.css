@@ -210,10 +210,12 @@ color:aqua;
      text-align: left;
    }
    .A p{
-     text-decoration: none;
-     background-color: black;
-     color: white;
-     text-shadow: 2px 2px 4px #000000;
+ 
+  color: black;
+  text-shadow: 2px 2px 4px #000000;
+  background-color: white;
+  background-image: radial-gradient( white,whitesmoke, gray);
+  background-attachment: fixed;
    }
    .lajme a:link {
      color: black;
