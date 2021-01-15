@@ -107,8 +107,67 @@
 
 .Titulli3  hr{
   background-color: rgb(0, 255, 21);
-  width: 50%;
+  width: 46%;
   height: 3px;
+}
+.slajmet{
+   width: 96%;
+   margin: auto;
+   display: grid;
+   grid-gap: 25px;
+   grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+   grid-auto-rows: 350px;
+}
+.slajmet img{
+   width: 100%;
+   margin: auto;
+   height: 200px;
+   object-fit:cover;
+}
+.slajmet> div{
+   background-color: white;
+  /* text-align: left; */
+}
+.slajmet p{
+   width: 100%;
+   margin: auto;
+   padding-top: 7px;
+   font-size: 15px;
+   color: black;
+}
+.slajmet a:link{
+   color: black;
+   background-color: transparent;
+   text-decoration: none;
+}
+
+.slajmet a:visited{
+   text-decoration: none;
+   color:rgb(29,29,85);
+   background-color: transparent;
+}
+.slajmet a:hover{
+  color:black;
+  background-color: transparent;
+  text-decoration: none;
+} 
+.slajmet a:active{
+   color: black;
+   background-color: transparent;
+   text-decoration: none;
+}
+.slajmet h2{
+   text-decoration: none;
+   margin: auto;
+   font-size: 20px;
+   color: black;
+   text-align: justify;
+}
+.lexomeshum p{
+   text-decoration: none;
+   background-color: black;
+   color: white;
+   padding-left: 2%;
 }
 
 
