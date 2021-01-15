@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 
 <html manifest="cache.appcache" lang="en" dir="ltr">
@@ -16,6 +20,13 @@
          $(".udhezimet").fadeToggle(1000);
        });
        });
+       $(function(){
+      $(".animate").mouseleave(function(){
+      $("h2").animate({left: '35%'});
+  });
+});
+   
+   
        </script>
 
 
@@ -203,16 +214,17 @@ Portal</div>
   <div class="pjesa4">
     <div class="titulli3">
     <h1>Snake Game</h1>
-     <hr>
+    <hr>
     </div>
     <div class="snake">
      <canvas id="game" width="1000" height="500">
        </canvas>
        </div>
-       
-      <h2>Udhëzimet Për Lojen:
-        <hr>
-      </h2>
+       <div class="animate">
+      <h2 style="position: relative;">Udhëzimet Për Lojen
+        </h2>
+        <hr>     
+    </div>
       <button class="b2">Shiko ose Largo</button>
       <div class="udhezimet">
        <div class="levizjet">
@@ -244,16 +256,6 @@ Portal</div>
     <script src="Snake.js"></script>
     </div>
     
-
-
-
-
-
-
-
-
-
-
 
 
   <!--Footeri-->
@@ -319,3 +321,4 @@ Portal</div>
 </footer>
 </body>
 </html>
+
