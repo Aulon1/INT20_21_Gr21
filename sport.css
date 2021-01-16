@@ -22,6 +22,7 @@
     "p p p p3 p4";
     text-align: center;
 }
+
 .pjesa{
     grid-area: p;
     background-image: url(sfoto1.jpg);
@@ -32,6 +33,7 @@
     text-decoration: none;
     text-align: left;
 }
+
 .pjesa p{
     margin-top: 484px;
    /* background-color: rgb(180,180,180);*/
@@ -43,61 +45,105 @@
     grid-area: p1;
     background-color: gainsboro;
     margin: 1px;
-    transition: background-color 2s , transform 2s;
-}
-.pjesa_1:hover{
-    background-color: teal;
-
 
 }
 
+.pjesa_1 a:link{
+    text-decoration: none;
+    color: hex #000033;
+    text-align:left;
+    font-weight: 750;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pjesa_1 a:active{
+    color:unset;
+}
+.pjesa_1 a:hover{
+    text-decoration: underline;
+}
+.pjesa a:visited{
+    color: hex #000033;
+}
 .pjesa_2{
     grid-area: p2;
     background-color: gainsboro;
-    transition: background-color 2s , transform 2s;
     margin: 1px;
 }
-.pjesa_2:hover{
-    background-color: teal;
+.pjesa_2 a:link{
+    text-decoration: none;
+    color:hex #000033;
+    text-align: left;
+    font-weight: 750;
+    font-family: Arial, Helvetica, sans-serif;
   
+}
+.pjesa_2 a:hover{
+    text-decoration: underline;
 }
 
 .pjesa_3{
     grid-area: p3;
     background-color: gainsboro;
-    transition: background-color 2s , transform 2s;
     margin: 1px;
 }
+.pjesa_2 a:active{
+    color:unset;
+}
+.pjesa_3 a:link{
+    text-decoration: none;
+    color: hex #000033;
+    text-align:left;
+    font-weight: 750;
+    font-family: Arial, Helvetica, sans-serif;
 
-.pjesa_3:hover{
-    background-color:teal;
+}
+.pjesa_3 a:hover{
+    text-decoration: underline;
+}
+.pjesa_3 a:visited{
+    color: hex #000033;
+}
+.pjesa_3 a:active{
+    color:unset;
 }
 
 
 .pjesa_4{
     grid-area: p4;
     background-color: gainsboro;
-    transition: background-color 2s , transform 2s;
     margin: 1px;
 }
-
-.pjesa_4:hover{
+.pjesa_4 a{
+    text-decoration: none;
+    color: hex #000033;
+    text-align:left;
+    font-weight: 750;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pjesa_4 a:hover{
+    text-decoration: underline;
+}
+.pjesa_4 a:active{
+    color:unset;
+}
+/*.pjesa_4:hover{
     transform: rotateY(360deg);
     background-color: teal;
-}
+} */
 
 
 .pjeset i{
     font-size: 100px;
     margin-top: 10px;
-    columns: #000000;
+    color: #000000;
 }
 
 .pjeset p{
     font-size: 16px;
     padding: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: inherit;
+    text-align: left;
 }
 
 
@@ -199,4 +245,47 @@ tr:hover{
     padding-top: 15px;
     font-size: 17px;
 
+}
+@media(max-width:1023px){
+    
+    .pjeset{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 350px 250px 250px;
+        grid-template-areas: 
+        "p p"
+        "p1 p2 "
+        "p3 p4";
+    }
+   
+    
+    .pjesa a:link{
+        color: black;
+        text-decoration: none;
+        text-align: left;
+    }
+    .pjesa p{
+        margin-top: 220px;
+        margin-left: 25px;
+        margin-right: 25px;
+        background-color:black;
+    }
+    
+}
+
+@media(max-width:767px){
+    .pjeset{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 250px 250px 250px 250px;
+        grid-template-areas: 
+        "p1"
+        "p2"
+        "p3"
+        "p4 ";
+    }
+    
+    
+    
+    .pjesa a:link{
+        display: none;
+    }
 }
