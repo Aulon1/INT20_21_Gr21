@@ -395,22 +395,34 @@ color:aqua;
     from {opacity: .4} 
     to {opacity: 1}
    }
-   .lajmet_kryesore{
-      width: 76%;
-      margin: auto;
+   .article{
+      width:50%;
+      float:none;
+      max-width: 60%;
+   }
+   .article p{
+      font-size: 20px;
+      text-align: left;
 
    }
    
-   .lajmet_kryesore img{
-      width: 100%;
-      margin: auto;
-      height: 200px;
-      object-fit:cover;
-   }
-   .lajmet_kryesore h1,h2{
-      text-decoration: none;
-      margin: auto;
-      font-size: 20px;
-      color: black;
-      text-align: justify;
-   }
+   .article img{
+      width: 90%;
+      bottom: 15px;
+      
+ }
+ #article_1{
+    float:left;
+    width:50%;
+ }
+ #article_2{
+    float:right;
+    width:50%;
+ }
+ 
+ .article h2{
+   text-decoration: none;
+   margin: auto;
+   font-size: 18px;
+   color: black;
+}
