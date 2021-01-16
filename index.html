@@ -4,7 +4,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.5.1.min.js" src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="jquery-3.5.1.min.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <script type="text/javascript">
        $(function() {
@@ -29,12 +30,6 @@
         });
         });
         });
-        $(function(){ 
-        $(".Titulli5").click(function(event){
-        alert("Shtype më lart faqen Argëtimi për të kaluar tek ajo faqe!");
-        event.preventDefault();   
-        });  
-        });
         $(function(){
         $(".f1").submit(function(){
           alert("Te dhenat tuaja u pranuan me sukses");
@@ -49,12 +44,43 @@
         $(function(){
         $(".hekja").removeAttr("class");
         });
-        $(function(){
-        $(".b5").click(function() {
-        $(".j5").animate({width:'900px'},1000);  
-        });
-        });
+       
     </script>
+    <style>
+      .article{
+      width:50%;
+      float:none;
+      max-width: 60%;
+   }
+   .article p{
+      font-size: 20px;
+      text-align: left;
+
+   }
+   
+   .article img{
+      width: 90%;
+      bottom: 15px;
+      
+ }
+ #article_1{
+   
+  float:left;
+    width:50%;
+ }
+ #article_2{
+  
+  float:right;
+    width:50%;
+ }
+ 
+ .article h2{
+   text-decoration: none;
+   margin: auto;
+   font-size: 18px;
+   color: black;
+}
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portal.css">
 
@@ -87,18 +113,50 @@ Portal</div>
   </h1>
   
 </div>
-
+<!--Lajmet-->
 <div class="PjesaLajmeve">
   <div class="Titulli1">
   <a href="Lajme.html" style="text-decoration: none; color: black;">
-   <h2 class="l1">Lajme</h2>
-   <hr>
-   </a>
-   <button class="b1" > Hiq ose shiko</button>
+   <h2 class="l1">Lajmet e fundit</h2>
+   </a><hr>
+   
    </div>
-   <div class="j1">lajmi fundit</div>
+   <div class="j1">
+<div class="lajmet">
+  
+  <hr class="vija">
+  <div class="lajme">
+    <a href="Lajmi_1.html" target="blank">
+    <img src="lajmi1.jpg" alt="Lajmi pare">
+      <h2>Bie qeveria Hoti, Kushtetuesja e çon Kosovën në zgjedhje brenda 40 ditësh</h2>
+      <p>Gjykata Kushtetuese e Kosovës ka hedhur poshtë votën e deputetit Etem Arifi, vendimtare në formimin e qeverisë së kryesuar nga Avdullah Hoti, dhe ka urdhëruar mbajtjen e zgjedhjeve të parakohshme parlamentare.</p>  
+</a></div>
+  <div class="lajme">
+    <a href="Lajmi_2.html" target="blank">
+    <img src="l2.jpg" alt="Lajmi dyte"> 
+      <h2>Mërgimtarët sërish ballafaqohen me pritjet kufitare – kolona automjetesh në kufirin Kroaci-Slloveni</h2> 
+    <p>Nga 1 janari, bashkatdhetarët që kanë qëndruar për festat e fundvitit në Kosovë, tani po kthehen në vendet ku punojnë dhe veprojnë.Por, sërish edhe për t’u kthyer ata po hasin në pengesa të ndryshme.   </p>
+   </a></div>
+  <div class="lajme">
+    <a href="Lajme_6.html" target="blank">
+    <img src="l6.jpg" alt="Lajmi trete">
+    
+    <h2>Bill Gates parashikon që jeta do të ‘kthehet në normalitet’ në vitin 2021 pas ‘vitit shkatërrues’</h2>
+    <p>Bill Gates, i cili ka një vlerë neto të vlerësuar prej 120.1 miliardë dollarësh, tha se bota “nuk është në pyll” por beson se ka “lajme të mira që vijnë në vitin 2021” ndërsa vaksinat përhapen.</p>
+    </a>
+  </div>
 </div>
+</div>
+</div>
+<br>
+<button class="b1" > 
+<div class="A">
+    <a href="Lajme.html"><p>Lexo më shumë</p></a>
+    </div></button>
+  
 
+
+    <!--Shendetsia-->
 <div class="PjesaShendetesis">
   <div class="Titulli2">
   <a href="Shëndetësia.html" style="text-decoration: none; color: black;">
@@ -120,6 +178,8 @@ Portal</div>
        </article></br></br></br></div>
 </div>
 
+
+<!--Sporti-->
 <div class="PjesaSport">
   <div class="Titulli3">
   <a href="Sport.html" style="text-decoration: none; color: black;"> 
@@ -128,9 +188,51 @@ Portal</div>
   </a>
   <button class="b3" > Hiq ose shiko</button>
   </div>
-  <div class="j3">lajmi fundit</div>
+  <div class="j3">
+
+    <div class="slajmet">
+      <div class="lajmi_1">
+        <a href="slajmi_2.html" target="_self">
+          <img src="slajmi_1.jpg" alt="Fotoja pare">
+         <h2>Kush  është  më  i  miri  në  futboll  – Maradona, Messi apo Ronaldo? <br>Klopp jep përgjigjen e tij !</h2>
+         <p> Jurgen Klopp ka dhënë mendimet e tij rreth legjendës së futbollit, Diego Maradona që ndërroi jetë në këtë javë.
+          Argjentinasi u nda nga jeta këtë të mërkurën. 
+        </p>
+        
+        </a>
+      </div>
+      <div class="lajmi_2">
+        <a href="slajmi_3.html" target="_self">
+          <img src="slajmi_2.jpg" alt="Fotoja dyte">
+          <h2>Tyson Fury akuzon Anthony Joshuan se ka gënjyer në taktikat për mega meçin që pritet të realizohet gjatë këtij viti.</h2>
+          <p>Fury ka përgënjeshtruar  Joshuan se ky i fundit ka taktikat se si mund ta fitojë mega meçin që mund të realizohet në këtë vit.
+            Dy boksierit britanikë janë afër marrëveshjes.
+            </p>
+        </a>
+      </div>
+    <div class="lajmi_4">
+      <a href="slajmi_5.html" >
+        <img src="slajmi_4.jpg" alt="Fotoja e kater">
+        <h2>&Ccedil;iklizmi apo ecja? Cilën duhet ta preferoni më shumë?&Ccedil;farë ndodh nëse e përdorni shumë rrallë një makinë?</h2>
+        <p>Çfarë ndodh nëse e përdorni shumë rrallë një makinë?
+           Me siguri se me kohën nuk do të funksionojë siç duhet, 
+           ose do të prishet e gjitha.
+           Thuajse e njëjta rregull aplikohet edhe te trupi.
+        </p>
+      </a>
+    </div>
+  </div>
+  </div><br>
+  <div class="lexomeshum">
+    <a href="Sport.html"><p>Lexo me shume</p></a>
+  </div>
 </div>
 
+
+
+
+
+<!--Magazina-->
 <div class="PjesaMagazina">
   <div class="Titulli4">
   <a href="Magazina.html" style="text-decoration: none; color: black;"> 
@@ -139,7 +241,28 @@ Portal</div>
   </a>
   <button class="b4" > Hiq ose shiko</button>
   </div> 
-  <div class="j4">lajmi fundit</div>
+  <div class="j4">
+    
+
+    
+    <div class="article" id="article_1">
+    <a href="https://telegrafi.com/grammy-awards-2021-shtyhet-per-shkak-te-pandemise-coronavirus/" target="blank">
+      <img  src="grammy.jpg"  alt=""  >
+      <h2>Grammy awards shtyhet per shkak te pandemise coronavirus</h2></a>
+    </div>
+<div class="article" id="article_2">
+  <a href="https://telegrafi.com/kengetaret-e-estrades-solidarizohen-te-lenduarit-nga-shperthimi-ne-ferizaj/"  target="blank">
+<img  src="foto2.jpg"  alt="" >
+<h2 >Kengetaret e estrades solidarizohen me te lenduarit nga shperthimi</br> ne Ferizaj</h2></a>
+</div>
+    <br>
+<button class="b1" > 
+<div class="A">
+  <a href="Magazina.html"><p>Lexo më shumë</p></a>
+
+</div>
+</div>
+</div>
 </div>
 
 
@@ -151,17 +274,101 @@ Portal</div>
     <hr>
   </a>
   </div>
-  <button class="b5" > Rrite</button>
-<div class="j5">
-  <img src="h7.1.jpg" style="width:100%">
-  
+
+<div class="titulliA"><h2>Foto Qesharake</h2><hr></div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="h6.1.jpg" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="h2.2.jpg" style="width:100%">
+    
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="h3.1.jpg" style="width:100%">
+     
+    </div>
+    
+    
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="h4.1.jpg" style="width:100%">
+     
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="h1.1.jpg" style="width:100%">
+     
+    </div>
+    
+    
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="h7.1.jpg" style="width:100%">
+     
+    </div>
+    
+    
+    <a class="prapa" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="para" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span> 
+    </div>
+  </div>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
 </div>
-</div>
 
-
-
-<footer>
+<!--Footeri-->
+<footer >
   <div class="foteri">
+    <!--Pjesa e par e footerit About us ,inkonat -->
   <div class="f">
     <h2>
       About us
@@ -171,14 +378,27 @@ Portal</div>
         Te gjitha te drejtat jane te autorizuara dhe nuk lejohet shperndarja e materialeve pa lejen tone.
       </p>
       <div class="social">
-        <i class="fab fa-instagram"></i>
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-youtube"></i>
-    <i class="fab fa-google"></i>
+        <a href="https://www.instagram.com/" target="target">  <i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/?lang=en" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.google.com/" target="blank"><i class="fab fa-google"></i></a>
       </div>
+    </br>
+    <p id="ditaf"></p>
+
+<script>
+
+if (typeof(Storage) !== "undefined") {
+ localStorage.setItem("Data formimit", "Ky portal u formua me <b>16-01-2021</b>.");
+  document.getElementById("ditaf").innerHTML = localStorage.getItem("Data formimit");
+} else {
+  document.getElementById("ditaf").innerHTML = "Browseri juaj nuk e perkrah localStorage";
+}
+</script>
     </div>
   </div>
+  <!--Pjesa ne mes e footerit -->
   <div class="center">
     <h2>
       Address
@@ -199,9 +419,11 @@ Portal</div>
     </div>
   </div>
   <div class="kontakti">
+
+  <!--Pjesa e fundit e footerit, contat as  me forma -->
   <h2>Contact us</h2>
 <div class="about">
-  <form class="f1" action="#" >
+  <form action="#" >
 <div class="email">
   <div class="text">Email*</div>
   <input type="email" required>
@@ -210,17 +432,22 @@ Portal</div>
   <div class="text">Message*</div>
   <textarea  cols="30" rows="1" required></textarea>
   <div class="b">
-    <button class="sub1" type="submit">
+    <button type="submit">
       Send
     </button>
   </div>
-  
-  
-</div>
   </form>
-</div>
-
-  </div>
 </footer>
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
