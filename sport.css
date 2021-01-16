@@ -112,6 +112,7 @@
     grid-area: p4;
     background-color: gainsboro;
     margin: 1px;
+    transition: background-color 2s ,transform 2s;
 }
 .pjesa_4 a{
     text-decoration: none;
@@ -126,10 +127,9 @@
 .pjesa_4 a:active{
     color:unset;
 }
-/*.pjesa_4:hover{
+.pjesa_4:hover{
     transform: rotateY(360deg);
-    background-color: teal;
-} */
+} 
 
 
 .pjeset i{
