@@ -1,33 +1,23 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
-
   <head>
-
     <meta charset="utf-8">
-
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
-
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
   <body>
 
     <nav>
-
-      <div class="logo">
-
-Portal</div>
-
-<input type="checkbox" id="click">
-
+      <div class="logo">Portal</div>
+      <input type="checkbox" id="click">
       <label for="click" class="menu-btn">
-
-        <i class="fas fa-bars"></i>
-
+      <i class="fas fa-bars"></i>
       </label>
-
       <ul>
 
 <li><a  href="portal.html">Home</a></li>
@@ -85,7 +75,7 @@ Portal</div>
 <img src="zanfina.jpg" alt="">
   <a href="https://telegrafi.com/zanfina-ismaili-thote-se-eshte-larguar-perfundimisht-nga-muzika/" target="blank">
     <h3>Zanfina ismaili thote se eshte larguar perfundimisht nga muzika</h3></div>
-
+</div>
   <div class="lajmet_b">
     <h5>Me te lexuara</h5>
     <hr class="vija">
@@ -106,7 +96,9 @@ Portal</div>
     <a href="https://telegrafi.com/genta-ismajli-befason-ne-nje-fotografi-te-publikuar-krah-huseyin-merr-vemendje-dukjen-natyrale/" target="blank"></a>
       <h4>Genta Ismaili befason ne nje fotografi te publikuar krah Huseyin,merr vemendjen me dukjen natyrale</h4>
   </div>
-  
+  </div>
+</div>
+
 </main>
 <aside>
 <div class="reklama">
@@ -115,10 +107,11 @@ Portal</div>
 </div>
 <div class="reklama_1">
   <a href="https://www.citysale.co/en/sale/detail/key/form-feature-sale-306236/" target="blank">
-  <h6>Perfito Zbritje nga 30% deri ne 50%</h6>
+  <h6>Perfito Zbritje nga 30% deri ne 50%</h6></a>
 </div>
     </aside>
-</nav>
+</div>
+</div>
 </div>
 
 
@@ -141,12 +134,24 @@ Portal</div>
           Te gjitha te drejtat jane te autorizuara dhe nuk lejohet shperndarja e materialeve pa lejen tone.
         </p>
         <div class="social">
-          <i class="fab fa-instagram"></i>
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-youtube"></i>
-      <i class="fab fa-google"></i>
+          <a href="https://www.instagram.com/" target="target">  <i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/?lang=en" target="blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.google.com/" target="blank"><i class="fab fa-google"></i></a>
         </div>
+      </br>
+      <p id="ditaf"></p>
+  
+  <script>
+  
+  if (typeof(Storage) !== "undefined") {
+   localStorage.setItem("Data formimit", "Ky portal u formua me <b>16-01-2021</b>.");
+    document.getElementById("ditaf").innerHTML = localStorage.getItem("Data formimit");
+  } else {
+    document.getElementById("ditaf").innerHTML = "Browseri juaj nuk e perkrah localStorage";
+  }
+  </script>
       </div>
     </div>
     <!--Pjesa ne mes e footerit -->

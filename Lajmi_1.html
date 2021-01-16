@@ -7,32 +7,37 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .LAJMET{
+     /** Gjersia e faqes, margjina, ngjyra e bakgraundit,  **/
+.LAJMET{
     width: 100%;
     margin: auto ;
     margin-top: 0px;
     background-color: white;
-    text-align: left;
+
 }
+/**Gjersia e main, ne anen e majt  **/
 main{
     width: 75%;
     float: left;
 }
+/**Gjersia e main, ne anen e djatht **/
 aside{
     width: 25%;
     float: right;
 }
-
+/** Vija ndarese, gjeresia,lartesia dhe ngjyra **/
+.vija{
+    width: 100%;
+    height: 6px;
+    background-color: black;
+}
+/** Gjersia e fotos, margjina**/
 .LAJMET img{
     display: block;
     width: 70%;
     margin-left: auto;
   margin-right: auto;
-}
-.vija{
-    width: 100%;
-    height: 6px;
-    background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
     </style>
   </head>
@@ -84,7 +89,7 @@ Deputeti Arifi është dënuar me 1 vit e 3 muaj burgim nga Gjykata e Apelit pë
   </video>
   <hr class="vija" >
   <br>
-  <h2>Harta e shperndarjes se COVID-19</h2>
+  <h3>Harta e shperndarjes se COVID-19</h3>
   <video width="320" height="240" autoplay loop>
     <source src="harta.mp4" type="video/mp4">
   </video>
@@ -95,69 +100,66 @@ Deputeti Arifi është dënuar me 1 vit e 3 muaj burgim nga Gjykata e Apelit pë
  
         
     </div>
-    <footer >
-      <div class="foteri">
-      <div class="f">
-        <h2>
-          About us
-        </h2>
-        <div class="about">
-          <p>
-            Te gjitha te drejtat jane te autorizuara dhe nuk lejohet shperndarja e materialeve pa lejen tone.
-          </p>
-          <div class="social">
-            <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-google"></i>
-          </div>
-        </div>
-      </div>
-      <div class="center">
-        <h2>
-          Address
-        </h2>
-        <div class="about">
-          <div class="pa">
-            <span class="fas fa-map-marker-alt"></span>
-              <span class="text">Prishtinë</span>
-            </div>
-    <div class="phone">
-              <span class="fas fa-phone-alt"></span>
-              <span class="text">+383 44 444 444</span>
-          </div>
-          <div class="email">
-            <span class="fas fa-envelope"></span>
-            <span class="text">Portal@example.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="kontakti">
-    
-      
-      <h2>Contact us</h2>
+     <!--Footeri-->
+<footer >
+  <div class="foteri">
+    <!--Pjesa e par e footerit About us ,inkonat -->
+  <div class="f">
+    <h2>
+      About us
+    </h2>
     <div class="about">
-      <form action="#" >
-    <div class="email">
-      <div class="text">Email*</div>
-      <input type="email" required>
-    </div>
-    <div class="msg">
-      <div class="text">Message*</div>
-      <textarea  cols="30" rows="1" required></textarea>
-      <div class="b">
-        <button type="submit">
-          Send
-        </button>
+      <p>
+        Te gjitha te drejtat jane te autorizuara dhe nuk lejohet shperndarja e materialeve pa lejen tone.
+      </p>
+      <div class="social">
+        <a href="https://www.instagram.com/" target="target">  <i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/?lang=en" target="blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.google.com/" target="blank"><i class="fab fa-google"></i></a>
       </div>
-      
-      
     </div>
-      </form>
-    </div>
-    
+  </div>
+  <!--Pjesa ne mes e footerit -->
+  <div class="center">
+    <h2>
+      Address
+    </h2>
+    <div class="about">
+      <div class="pa">
+        <span class="fas fa-map-marker-alt"></span>
+          <span class="text">Prishtinë</span>
+        </div>
+<div class="phone">
+          <span class="fas fa-phone-alt"></span>
+          <span class="text">+383 44 444 444</span>
       </div>
-    </footer>
+      <div class="email">
+        <span class="fas fa-envelope"></span>
+        <span class="text">Portal@example.com</span>
+      </div>
+    </div>
+  </div>
+  <div class="kontakti">
+
+  <!--Pjesa e fundit e footerit, contat as  me forma -->
+  <h2>Contact us</h2>
+<div class="about">
+  <form action="#" >
+<div class="email">
+  <div class="text">Email*</div>
+  <input type="email" required>
+</div>
+<div class="msg">
+  <div class="text">Message*</div>
+  <textarea  cols="30" rows="1" required></textarea>
+  <div class="b">
+    <button type="submit">
+      Send
+    </button>
+  </div>
+  </form>
+</footer>
 </body>
 </html>

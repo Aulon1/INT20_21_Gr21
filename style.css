@@ -131,7 +131,7 @@ input[type="checkbox"]{
   }
 }
 /*footer*/
-
+/**Footeri pozicioni, gjeresia, ngjyra e teksiti, bakrandit**/
 footer{
   clear: both;
   position: relative;
@@ -143,21 +143,24 @@ footer{
 }
 .foteri{
   display: flex;
- 
 }
+/****/
 .f{
   flex-basis: 50%;
   padding: 10px 20px;
 }
+/****/
 .f h2{
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
 }
+/****/
 .about{
   margin: 20px 0 0 0;
   position: relative;
 }
+/****/
 .about::before{
     position: absolute;
     content: '';
@@ -166,6 +169,7 @@ footer{
     width: 100%;
     background: #1a1a1a;
  }
+ /****/
 .about:after{
     position: absolute;
     content: '';
@@ -174,12 +178,19 @@ footer{
     background: #f12020;
     top: -10px;
 }
+/****/
 .social{
   margin: 20px 0 0 0;
 }
+/****/
 .social i{
   padding: 0 2px;
 }
+/****/
+.social a{
+  color: white;
+}
+/****/
 .social i{
   height: 40px;
   width: 40px;
@@ -190,9 +201,11 @@ footer{
   border-radius: 5px;
   transition: 0.3s ;
 }
+/****/
 .social i:hover{
   background-color: #f12020;
 }
+/****/
 .about span{
   font-size: 1.4375rem;
   background: #1a1a1a;
@@ -205,25 +218,31 @@ footer{
   cursor: pointer;
   transition: 0.3s ;
 }
+/****/
 .about span:hover{
   background: #f12020;
 }
+/****/
 .about text{
   font-size: 15px;
   font-weight: 500;
   padding-left: 10px;
 }
+/****/
 .phone{
   margin: 15px 0;
 }
+/****/
 .form text{
   font-size: 15px;
   margin-bottom: 2px;
   color: #656565;
 }
+/****/
 .msg{
   margin-top: 10px;
 }
+/****/
 .form textarea{
   width: 100%;
   font-size: 1.0625rem;
@@ -231,18 +250,23 @@ footer{
   padding-left: 10px;
   border: 1px solid white;
 }
+/****/
 .form input:focus{
   outline-color: #3498db;
 }
+/****/
 .form textarea:focus{
   outline-color: #3498db;
 }
+/****/
 .form input{
   height: 35px;
 }
+/****/
 .b{
   margin-top: 10px;
 }
+/****/
 .b button{
   height: 40px;
   width: 100%;
@@ -256,6 +280,7 @@ footer{
   border-radius: 10px;
   margin-left: 2%;
 }
+/****/
 .b button:hover{
   background: white;
 }

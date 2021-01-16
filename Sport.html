@@ -386,8 +386,8 @@ Portal</div>
 
 
         
-<!--Footeri-->
-<footer >
+ <!--Footeri-->
+ <footer >
   <div class="foteri">
     <!--Pjesa e par e footerit About us ,inkonat -->
   <div class="f">
@@ -405,10 +405,22 @@ Portal</div>
         <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
         <a href="https://www.google.com/" target="blank"><i class="fab fa-google"></i></a>
       </div>
+    </br>
+    <p id="ditaf"></p>
+
+<script>
+
+if (typeof(Storage) !== "undefined") {
+ localStorage.setItem("Data formimit", "Ky portal u formua me <b>16-01-2021</b>.");
+  document.getElementById("ditaf").innerHTML = localStorage.getItem("Data formimit");
+} else {
+  document.getElementById("ditaf").innerHTML = "Browseri juaj nuk e perkrah localStorage";
+}
+</script>
     </div>
   </div>
   <!--Pjesa ne mes e footerit -->
-  <address>
+  <div class="center">
     <h2>
       Address
     </h2>
@@ -426,7 +438,7 @@ Portal</div>
         <span class="text">Portal@example.com</span>
       </div>
     </div>
-</address>
+  </div>
   <div class="kontakti">
 
   <!--Pjesa e fundit e footerit, contat as  me forma -->
