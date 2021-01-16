@@ -180,6 +180,9 @@ footer{
 .social i{
   padding: 0 2px;
 }
+.social a{
+  color: white;
+}
 .social i{
   height: 40px;
   width: 40px;

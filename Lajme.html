@@ -7,14 +7,17 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style> 
+/**Gjersia e main, ne anen e majt **/
 main{
     width: 75%;
     float: left;
 }
+/**Gjersia e aside, ne anen e djatht **/
 aside{
     width: 25%;
     float: right; 
 }
+/**Gjersia e titullit, margjina, ngjyra, bakgrandi, kalimi i ngjyrave, rreshtimi i teksitit majtas, madhesia e teksit, hija e tekstit**/
 h1{ 
   width: 100%;
   margin: auto ;
@@ -37,20 +40,18 @@ h1{
 }
 .Table img{
     width: 97%; 
-   
-  object-fit: cover;
-
-
 }
 
 .Table h2{
-    text-decoration: none;
-    position: static;
-    font-size: 15px;
+    text-align: left;
+    font-size: 16px;
+    position: relative;
+  bottom: 80px;
 }
 .Table p{
-  position: static;
-    font-size: 15px;
+  text-align: justify;
+  font-size: 15px;
+ 
 }
 
 #lajmi_1{
@@ -60,7 +61,8 @@ h1{
 
 #lajmi_1 img{
     position: relative;
-    bottom: 95px;
+    width: 99%;
+    bottom: 110px;
   
 }
 #lajmi_1  p{
@@ -70,30 +72,24 @@ h1{
     padding: 10px;
   
 }
-#lajmi_1  h2{
-    position: relative;
-    bottom: 80px;
-}
+
 
 /** linku ne tabel, kur eshte aktiv, vizitohet etj**/
 .Table a:link {
     color: black;
-    background-color: transparent;
     text-decoration: none;
 }
 .Table a:visited {
     color: rgb(29, 29, 85);
-    background-color: transparent;
+ 
     text-decoration: none;
 }
 .Table a:hover {
     color: black;
-    background-color: transparent;
     text-decoration: none;
 }
 .Table a:active {
     color: black;
-    background-color: transparent;
     text-decoration: none;
 }
 .vija{
@@ -143,7 +139,7 @@ h1{
             <img src="lajmi1.jpg" alt="Lajmi pare"><a href="Lajmi_1.html" target="blank">
             <h2>Bie qeveria Hoti, Kushtetuesja e çon Kosovën në zgjedhje brenda 40 ditësh</h2></a>
             <p>Gjykata Kushtetuese e Kosovës ka hedhur poshtë votën e deputetit Etem Arifi, vendimtare në formimin e qeverisë së kryesuar nga Avdullah Hoti, dhe ka urdhëruar mbajtjen e zgjedhjeve të parakohshme parlamentare.</p>  
-            
+          
             </td>
             <td id="lajmi_2">
               
@@ -218,16 +214,16 @@ h1{
   </video>
   <hr class="vija" >
   <br>
-  <p>Harta e shperndarjes se COVID-19</p>
-  <h2>Harta e shperndarjes se COVID-19</h2>
+  <h3>Harta e shperndarjes se COVID-19</h3>
+ 
   <video width="320" height="240" autoplay loop>
     <source src="harta.mp4" type="video/mp4">
   </video>
   <hr class="vija" >
 </aside>
 </div>
-<!--Footeri-->
-<footer >
+ <!--Footeri-->
+ <footer >
   <div class="foteri">
     <!--Pjesa e par e footerit About us ,inkonat -->
   <div class="f">
@@ -260,7 +256,7 @@ if (typeof(Storage) !== "undefined") {
     </div>
   </div>
   <!--Pjesa ne mes e footerit -->
- <address>
+  <div class="center">
     <h2>
       Address
     </h2>
@@ -278,8 +274,7 @@ if (typeof(Storage) !== "undefined") {
         <span class="text">Portal@example.com</span>
       </div>
     </div>
-  </address>
-  
+  </div>
   <div class="kontakti">
 
   <!--Pjesa e fundit e footerit, contat as  me forma -->
