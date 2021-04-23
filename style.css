@@ -232,58 +232,7 @@ footer{
 .phone{
   margin: 15px 0;
 }
-/****/
-.form text{
-  font-size: 15px;
-  margin-bottom: 2px;
-  color: #656565;
-}
-/****/
-.msg{
-  margin-top: 10px;
-}
-/****/
-.form textarea{
-  width: 100%;
-  font-size: 1.0625rem;
-  background: white;
-  padding-left: 10px;
-  border: 1px solid white;
-}
-/****/
-.form input:focus{
-  outline-color: #3498db;
-}
-/****/
-.form textarea:focus{
-  outline-color: #3498db;
-}
-/****/
-.form input{
-  height: 35px;
-}
-/****/
-.b{
-  margin-top: 10px;
-}
-/****/
-.b button{
-  height: 40px;
-  width: 100%;
-  border: none;
-  outline: none;
-  background: #f12020;
-  font-size: 1.0625rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: .3s;
-  border-radius: 10px;
-  margin-left: 2%;
-}
-/****/
-.b button:hover{
-  background: white;
-}
+
 @media screen and (max-width: 900px) {
   footer{
     position: relative;
