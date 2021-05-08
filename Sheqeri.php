@@ -8,22 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <nav>
-      <div class="logo">
-Portal</div>
-<input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-<li><a  href="portal.html">Home</a></li>
-<li><a href="Lajme.html">Lajme</a></li>
-<li><a class="active" href="Shëndetësia.html">Shëndetësia</a></li>
-<li><a href="Sport.html">Sport</a></li>
-<li><a  href="Magazina.html">Magazina</a></li>
-<li><a href="Argëtim.html">Argëtim</a></li>
-</ul>
-</nav>
+  <?php include('./views/header.php')  ?>
 <h1 align="center">Ndikimi i sheqerit në imunitet</h1>
 <figure > 
   <img src="https://www.gazetaexpress.com/wp-content/uploads/2020/12/Bitter-sweet-revelations-Pakistan-sugar-millers-deny-corruption-findings-as-accusations-fly_wrbm_large-1-600x360.jpg"

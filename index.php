@@ -29,7 +29,7 @@
       alert("Shtypni përsëri që të shfaqni ose fshehni");
         });
         });
-        });
+        });      
         $(function(){
         $(".l1").text("Lajmet");
         });
@@ -81,24 +81,7 @@
 
   </head>
   <body>
-    <nav>
-      <div class="logo">
-Portal</div>
-<input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-<li><a class="active" href="#">Home</a></li>
-<li><a href="Lajme.html">Lajme</a></li>
-<li><a href="Shëndetësia.html">Shëndetësia</a></li>
-<li><a href="Sport.html">Sport</a></li>
-<li><a href="Argëtim.html">Argëtim</a></li>
-<li><a href="Kontakti.html">Kontakti</a></li>
-
-</ul>
-</nav>
-
+  <?php include('./views/header.php')  ?>
 
 
 
@@ -169,8 +152,8 @@ Portal</div>
         <img src="https://images.bisnis-cdn.com/posts/2020/06/10/1250747/vaksin-virus-corona-covid-19.jpg" align="right" height="200px" width="50%" alt="vaksin-virus-corona-covid-19"> 
       </figure>
     </br></br></br></br></br></br></br></br></br>
-     <article style="border:1px solid black; width: 49%; height:185px;position:absolute;"> Deri tani janë aprovuar disa vaksina nga Kina,SHBA,Rusia por disa prej tyre nuk i kanë kaluar të gjitha fazat pë tu përdorur. Vaksina Pfizer dhe Biontech është një vaksinë nga Gjermania që u aprovua në shumë vende dhe poashtu po përdoret në disa prej tyre. Gjithashtu vaksina pritet të vij edhe në Shqipëri dhe Kosovë por nuk dihet data e saktë. Kjo vaksinë është 95% efektive, një përqindje e lartë dhe ndër më të lartat kundrejt vaksinave tjera. Vetëm 5% e tyre kanë pasur efekte anësore si kokëdhimbje dhe lodhje.  </article>
-    <article style="border:1px solid black; width: 49%; height:185px;position:absolute; right:0 ;"> Sa më shumë përhapet një virus aq më shumë mutacione(variante) shfaqen.Një prej varianteve më të përfolur është ai britanik që përmban mbi 20 mutacione, tetë prej të cilave në zgjatimet që i shërbejnë virusit për të penetruar dhe infektuar qelizat e njeriut. Këto zgjatime janë në shenjestër të kurave mjekësore dhe vaksinave kundër koronavirusit.Shkencëtarët besojnë se vaksinat që janë miratuar deri tani do të jenë të efektshme edhe kundër variantit të ri, por ende vazhdon puna për ta konfirmuar këtë bindje.Deri atëherë zbatoni masat. 
+     <article style="border:1px solid black; width: 49%; height:180px;position:absolute;"> Deri tani janë aprovuar disa vaksina nga Kina,SHBA,Rusia por disa prej tyre nuk i kanë kaluar të gjitha fazat pë tu përdorur. Vaksina Pfizer dhe Biontech është një vaksinë nga Gjermania që u aprovua në shumë vende dhe poashtu po përdoret në disa prej tyre. Gjithashtu vaksina pritet të vij edhe në Shqipëri dhe Kosovë por nuk dihet data e saktë. Kjo vaksinë është 95% efektive, një përqindje e lartë dhe ndër më të lartat kundrejt vaksinave tjera. Vetëm 5% e tyre kanë pasur efekte anësore si kokëdhimbje dhe lodhje.  </article>
+    <article style="border:1px solid black; width: 49%; height:180px;position:absolute; right:0 ;"> Sa më shumë përhapet një virus aq më shumë mutacione(variante) shfaqen.Një prej varianteve më të përfolur është ai britanik që përmban mbi 20 mutacione, tetë prej të cilave në zgjatimet që i shërbejnë virusit për të penetruar dhe infektuar qelizat e njeriut. Këto zgjatime janë në shenjestër të kurave mjekësore dhe vaksinave kundër koronavirusit.Shkencëtarët besojnë se vaksinat që janë miratuar deri tani do të jenë të efektshme edhe kundër variantit të ri, por ende vazhdon puna për ta konfirmuar këtë bindje.Deri atëherë zbatoni masat. 
        </article></br></br></br></div>
 </div>
 
@@ -185,6 +168,7 @@ Portal</div>
   <button class="b3" > Hiq ose shiko</button>
   </div>
   <div class="j3">
+
     <div class="slajmet">
       <div class="lajmi_1">
         <a href="slajmi_2.html" target="_self">
@@ -204,7 +188,7 @@ Portal</div>
             Dy boksierit britanikë janë afër marrëveshjes.
             </p>
         </a>
-      </div>
+      </div>    
       <div class="lajmi_4">
         <a href="slajmi_5.html" >
           <img src="slajmi_4.jpg" alt="Fotoja e kater">
@@ -217,12 +201,11 @@ Portal</div>
         </a>
       </div>
     </div>
-    </div><br>    
+    </div><br>
   <div class="lexomeshum">
     <a href="Sport.html"><p>Lexo me shume</p></a>
   </div>
 </div>
-
 
 
 
@@ -329,64 +312,8 @@ Portal</div>
 
 </div>
 
-<!--Footeri-->
-<footer >
-  <div class="foteri">
-    <!--Pjesa e par e footerit About us ,inkonat -->
-  <div class="f">
-    <h2>
-      About us
-    </h2>
-    <div class="about">
-      <p>
-        Te gjitha te drejtat jane te autorizuara dhe nuk lejohet shperndarja e materialeve pa lejen tone.
-      </p>
-      <div class="social">
-        <a href="https://www.instagram.com/" target="target">  <i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/?lang=en" target="blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.google.com/" target="blank"><i class="fab fa-google"></i></a>
-      </div>
-    </br>
-    <p id="ditaf"></p>
 
-<script>
-
-if (typeof(Storage) !== "undefined") {
- localStorage.setItem("Data formimit", "Ky portal u formua me <b>16-01-2021</b>.");
-  document.getElementById("ditaf").innerHTML = localStorage.getItem("Data formimit");
-} else {
-  document.getElementById("ditaf").innerHTML = "Browseri juaj nuk e perkrah localStorage";
-}
-</script>
-    </div>
-  </div>
-  <!--Pjesa ne mes e footerit -->
-  <div class="center">
-    <h2>
-      Address
-    </h2>
-    <div class="about">
-      <div class="pa">
-        <span class="fas fa-map-marker-alt"></span>
-          <span class="text">Prishtinë</span>
-        </div>
-<div class="phone">
-          <span class="fas fa-phone-alt"></span>
-          <span class="text">+383 44 444 444</span>
-      </div>
-      <div class="email">
-        <span class="fas fa-envelope"></span>
-        <span class="text">Portal@example.com</span>
-      </div>
-    </div>
-  </div>
-
-
-  </form>
-</footer>
-
+<?php include('./views/footer.php')  ?>
 
 </body>
 </html>

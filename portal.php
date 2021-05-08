@@ -29,7 +29,7 @@
       alert("Shtypni përsëri që të shfaqni ose fshehni");
         });
         });
-        });      
+        });
         $(function(){
         $(".l1").text("Lajmet");
         });
@@ -81,24 +81,7 @@
 
   </head>
   <body>
-    <nav>
-      <div class="logo">
-Portal</div>
-<input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-<li><a class="active" href="#">Home</a></li>
-<li><a href="Lajme.html">Lajme</a></li>
-<li><a href="Shëndetësia.html">Shëndetësia</a></li>
-<li><a href="Sport.html">Sport</a></li>
-<li><a href="Argëtim.html">Argëtim</a></li>
-<li><a href="Kontakti.html">Kontakti</a></li>
-
-</ul>
-</nav>
-
+  <?php include('./views/header.php')  ?>
 
 
 
@@ -112,7 +95,7 @@ Portal</div>
 <!--Lajmet-->
 <div class="PjesaLajmeve">
   <div class="Titulli1">
-  <a href="Lajme.html" style="text-decoration: none; color: black;">
+  <a href="Lajme.php" style="text-decoration: none; color: black;">
    <h2 class="l1">Lajmet e fundit</h2>
    </a><hr>
    
@@ -122,19 +105,19 @@ Portal</div>
   
   <hr class="vija">
   <div class="lajme">
-    <a href="Lajmi_1.html" target="blank">
+    <a href="Lajmi_1.php" target="blank">
     <img src="lajmi1.jpg" alt="Lajmi pare">
       <h2>Bie qeveria Hoti, Kushtetuesja e çon Kosovën në zgjedhje brenda 40 ditësh</h2>
       <p>Gjykata Kushtetuese e Kosovës ka hedhur poshtë votën e deputetit Etem Arifi, vendimtare në formimin e qeverisë së kryesuar nga Avdullah Hoti, dhe ka urdhëruar mbajtjen e zgjedhjeve të parakohshme parlamentare.</p>  
 </a></div>
   <div class="lajme">
-    <a href="Lajmi_2.html" target="blank">
+    <a href="Lajmi_2.php" target="blank">
     <img src="l2.jpg" alt="Lajmi dyte"> 
       <h2>Mërgimtarët sërish ballafaqohen me pritjet kufitare – kolona automjetesh në kufirin Kroaci-Slloveni</h2> 
     <p>Nga 1 janari, bashkatdhetarët që kanë qëndruar për festat e fundvitit në Kosovë, tani po kthehen në vendet ku punojnë dhe veprojnë.Por, sërish edhe për t’u kthyer ata po hasin në pengesa të ndryshme.   </p>
    </a></div>
   <div class="lajme">
-    <a href="Lajme_6.html" target="blank">
+    <a href="Lajme_6.php" target="blank">
     <img src="l6.jpg" alt="Lajmi trete">
     
     <h2>Bill Gates parashikon që jeta do të ‘kthehet në normalitet’ në vitin 2021 pas ‘vitit shkatërrues’</h2>
@@ -147,7 +130,7 @@ Portal</div>
 <br>
 <button class="b1" > 
 <div class="A">
-    <a href="Lajme.html"><p>Lexo më shumë</p></a>
+    <a href="Lajme.php"><p>Lexo më shumë</p></a>
     </div></button>
   
 
@@ -155,7 +138,7 @@ Portal</div>
     <!--Shendetsia-->
 <div class="PjesaShendetesis">
   <div class="Titulli2">
-  <a href="Shëndetësia.html" style="text-decoration: none; color: black;">
+  <a href="Shëndetësia.php" style="text-decoration: none; color: black;">
     <h2 class="hekja">Shëndetësia</h2>
     <hr>
   </a>
@@ -169,8 +152,8 @@ Portal</div>
         <img src="https://images.bisnis-cdn.com/posts/2020/06/10/1250747/vaksin-virus-corona-covid-19.jpg" align="right" height="200px" width="50%" alt="vaksin-virus-corona-covid-19"> 
       </figure>
     </br></br></br></br></br></br></br></br></br>
-     <article style="border:1px solid black; width: 49%; height:180px;position:absolute;"> Deri tani janë aprovuar disa vaksina nga Kina,SHBA,Rusia por disa prej tyre nuk i kanë kaluar të gjitha fazat pë tu përdorur. Vaksina Pfizer dhe Biontech është një vaksinë nga Gjermania që u aprovua në shumë vende dhe poashtu po përdoret në disa prej tyre. Gjithashtu vaksina pritet të vij edhe në Shqipëri dhe Kosovë por nuk dihet data e saktë. Kjo vaksinë është 95% efektive, një përqindje e lartë dhe ndër më të lartat kundrejt vaksinave tjera. Vetëm 5% e tyre kanë pasur efekte anësore si kokëdhimbje dhe lodhje.  </article>
-    <article style="border:1px solid black; width: 49%; height:180px;position:absolute; right:0 ;"> Sa më shumë përhapet një virus aq më shumë mutacione(variante) shfaqen.Një prej varianteve më të përfolur është ai britanik që përmban mbi 20 mutacione, tetë prej të cilave në zgjatimet që i shërbejnë virusit për të penetruar dhe infektuar qelizat e njeriut. Këto zgjatime janë në shenjestër të kurave mjekësore dhe vaksinave kundër koronavirusit.Shkencëtarët besojnë se vaksinat që janë miratuar deri tani do të jenë të efektshme edhe kundër variantit të ri, por ende vazhdon puna për ta konfirmuar këtë bindje.Deri atëherë zbatoni masat. 
+     <article style="border:1px solid black; width: 49%; height:185px;position:absolute;"> Deri tani janë aprovuar disa vaksina nga Kina,SHBA,Rusia por disa prej tyre nuk i kanë kaluar të gjitha fazat pë tu përdorur. Vaksina Pfizer dhe Biontech është një vaksinë nga Gjermania që u aprovua në shumë vende dhe poashtu po përdoret në disa prej tyre. Gjithashtu vaksina pritet të vij edhe në Shqipëri dhe Kosovë por nuk dihet data e saktë. Kjo vaksinë është 95% efektive, një përqindje e lartë dhe ndër më të lartat kundrejt vaksinave tjera. Vetëm 5% e tyre kanë pasur efekte anësore si kokëdhimbje dhe lodhje.  </article>
+    <article style="border:1px solid black; width: 49%; height:185px;position:absolute; right:0 ;"> Sa më shumë përhapet një virus aq më shumë mutacione(variante) shfaqen.Një prej varianteve më të përfolur është ai britanik që përmban mbi 20 mutacione, tetë prej të cilave në zgjatimet që i shërbejnë virusit për të penetruar dhe infektuar qelizat e njeriut. Këto zgjatime janë në shenjestër të kurave mjekësore dhe vaksinave kundër koronavirusit.Shkencëtarët besojnë se vaksinat që janë miratuar deri tani do të jenë të efektshme edhe kundër variantit të ri, por ende vazhdon puna për ta konfirmuar këtë bindje.Deri atëherë zbatoni masat. 
        </article></br></br></br></div>
 </div>
 
@@ -178,17 +161,16 @@ Portal</div>
 <!--Sporti-->
 <div class="PjesaSport">
   <div class="Titulli3">
-  <a href="Sport.html" style="text-decoration: none; color: black;"> 
+  <a href="Sport.php" style="text-decoration: none; color: black;"> 
     <h2>Sport</h2>
     <hr>
   </a>
   <button class="b3" > Hiq ose shiko</button>
   </div>
   <div class="j3">
-
     <div class="slajmet">
       <div class="lajmi_1">
-        <a href="slajmi_2.html" target="_self">
+        <a href="slajmi_2.php" target="_self">
           <img src="slajmi_1.jpg" alt="Fotoja pare">
          <h2>Kush  është  më  i  miri  në  futboll  – Maradona, Messi apo Ronaldo? <br>Klopp jep përgjigjen e tij !</h2>
          <p> Jurgen Klopp ka dhënë mendimet e tij rreth legjendës së futbollit, Diego Maradona që ndërroi jetë në këtë javë.
@@ -198,16 +180,16 @@ Portal</div>
         </a>
       </div>
       <div class="lajmi_2">
-        <a href="slajmi_3.html" target="_self">
+        <a href="slajmi_3.php" target="_self">
           <img src="slajmi_2.jpg" alt="Fotoja dyte">
           <h2>Tyson Fury akuzon Anthony Joshuan se ka gënjyer në taktikat për mega meçin që pritet të realizohet gjatë këtij viti.</h2>
           <p>Fury ka përgënjeshtruar  Joshuan se ky i fundit ka taktikat se si mund ta fitojë mega meçin që mund të realizohet në këtë vit.
             Dy boksierit britanikë janë afër marrëveshjes.
             </p>
         </a>
-      </div>    
+      </div>
       <div class="lajmi_4">
-        <a href="slajmi_5.html" >
+        <a href="slajmi_5.php" >
           <img src="slajmi_4.jpg" alt="Fotoja e kater">
           <h2>&Ccedil;iklizmi apo ecja? Cilën duhet ta preferoni më shumë?&Ccedil;farë ndodh nëse e përdorni shumë rrallë një makinë?</h2>
           <p>Çfarë ndodh nëse e përdorni shumë rrallë një makinë?
@@ -218,9 +200,9 @@ Portal</div>
         </a>
       </div>
     </div>
-    </div><br>
+    </div><br>    
   <div class="lexomeshum">
-    <a href="Sport.html"><p>Lexo me shume</p></a>
+    <a href="Sport.php"><p>Lexo me shume</p></a>
   </div>
 </div>
 
@@ -231,9 +213,10 @@ Portal</div>
 
 
 
+
 <div class="PjesaArgetim">
   <div class="Titulli5">
-  <a href="Argëtim.html" style="text-decoration: none; color: black;"> 
+  <a href="Argëtim.php" style="text-decoration: none; color: black;"> 
     <h2 id="sh1">Argëtim</h2>
     <hr>
   </a>
@@ -329,61 +312,9 @@ Portal</div>
 
 </div>
 
-<!--Footeri-->
-<footer >
-  <div class="foteri">
-    <!--Pjesa e par e footerit About us ,inkonat -->
-  <div class="f">
-    <h2>
-      About us
-    </h2>
-    <div class="about">
-      <p>
-        Te gjitha te drejtat jane te autorizuara dhe nuk lejohet shperndarja e materialeve pa lejen tone.
-      </p>
-      <div class="social">
-        <a href="https://www.instagram.com/" target="target">  <i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/?lang=en" target="blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.google.com/" target="blank"><i class="fab fa-google"></i></a>
-      </div>
-    </br>
-    <p id="ditaf"></p>
 
-<script>
+<?php include('./views/footer.php')  ?>
 
-if (typeof(Storage) !== "undefined") {
- localStorage.setItem("Data formimit", "Ky portal u formua me <b>16-01-2021</b>.");
-  document.getElementById("ditaf").innerHTML = localStorage.getItem("Data formimit");
-} else {
-  document.getElementById("ditaf").innerHTML = "Browseri juaj nuk e perkrah localStorage";
-}
-</script>
-    </div>
-  </div>
-  <!--Pjesa ne mes e footerit -->
-  <div class="center">
-    <h2>
-      Address
-    </h2>
-    <div class="about">
-      <div class="pa">
-        <span class="fas fa-map-marker-alt"></span>
-          <span class="text">Prishtinë</span>
-        </div>
-<div class="phone">
-          <span class="fas fa-phone-alt"></span>
-          <span class="text">+383 44 444 444</span>
-      </div>
-      <div class="email">
-        <span class="fas fa-envelope"></span>
-        <span class="text">Portal@example.com</span>
-      </div>
-    </div>
-  </div>
-
-</footer>
 
 </body>
 </html>

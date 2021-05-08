@@ -43,22 +43,7 @@ main{
     </style>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-Portal</div>
-<input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-<li><a class="active" href="#">Home</a></li>
-<li><a href="Lajme.html">Lajme</a></li>
-<li><a href="Shëndetësia.html">Shëndetësia</a></li>
-<li><a href="Sport.html">Sport</a></li>
-<li><a href="Magazina.html">Magazina</a></li>
-<li><a href="Argëtim.html">Argëtim</a></li>
-</ul>
-    </nav>
+  <?php include('./views/header.php')  ?>
     <div class="slajmi1">
         <main>
             <h1 style="text-align:center; font-family:arial;" > A do të shtyhen Lojërat Olimpike në Tokio?</h1>

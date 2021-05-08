@@ -49,29 +49,11 @@
     
   </head>
   <body>
-    <nav>
-      <div class="logo">
-Portal</div>
-<input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-<li><a  href="portal.html">Home</a></li>
-<li><a href="Lajme.html">Lajme</a></li>
-<li><a href="Shëndetësia.html">Shëndetësia</a></li>
-<li><a class="active" href="Sport.html">Sport</a></li>
-<li><a href="Argëtim.html">Argëtim</a></li>
-<li><a href="Kontakti.html">Kontakti</a></li>
-
-
-
-</ul>
-</nav>
+  <?php include('./views/header.php')  ?>
 
   <div class="pjeset">
     <div class="pjesa">
-      <a href="slajmi_1.html" target="_blank">
+      <a href="slajmi_1.php" target="_blank">
         
         <p style="font-size: 28px;font-family: Arial, Helvetica, sans-serif;"> A do të shtyhen Lojërat Olimpike në Tokio? 
           Atletët e mbarë botës i janë gëzuar këtij viti - vitit të Lojërave Olimpike, që është ngjarja më e rëndësishme e një sportisti. </p>
@@ -128,21 +110,21 @@ Portal</div>
         <div class="lajmet">
 
             <div class="lajmi_1">
-              <a href="slajmi_2.html" target="_self">
+              <a href="slajmi_2.php" target="_self">
                 <img src="slajmi_1.jpg" alt="Fotoja pare">
                
                   <p>Kush  është  më  i  miri  në  futboll  – Maradona, Messi apo Ronaldo? Klopp jep përgjigjen e tij !</p>
                 </a>
             </div>
             <div class="lajmi_2">
-              <a href="slajmi_3.html " target="_self">
+              <a href="slajmi_3.php " target="_self">
                 <img src="slajmi_2.jpg" alt="Fotoja dyte">
                
                   <p>Tyson Fury akuzon Anthony Joshuan se ka gënjyer në taktikat për mega meçin që pritet të realizohet gjatë këtij viti.</p>
                 </a>
             </div>
             <div class="lajmi_3">
-              <a href="slajmi_4.html">
+              <a href="slajmi_4.php">
                 <img src="slajmi_3.jpg" alt="Foto e trete">
                 
                   <p>Shqiptari nga Shkupi  q&euml;  e   synon FORMULA 1 , kampion  n&euml; bot&euml;n e automobilizmit ne gar&euml;n e FORMULA 2.</p>
@@ -151,7 +133,7 @@ Portal</div>
                 
             </div>
             <div class="lajmi_4">
-              <a href="slajmi_5.html" >
+              <a href="slajmi_5.php" >
                 <img src="slajmi_4.jpg" alt="Fotoja e kater">
                 
                   <p>&Ccedil;iklizmi apo ecja? <br>Cilën duhet ta preferoni më shumë?<br>&Ccedil;farë ndodh nëse e përdorni shumë rrallë një makinë?</p>
@@ -405,61 +387,7 @@ Portal</div>
 
 
         
- <!--Footeri-->
- <footer >
-  <div class="foteri">
-    <!--Pjesa e par e footerit About us ,inkonat -->
-  <div class="f">
-    <h2>
-      About us
-    </h2>
-    <div class="about">
-      <p>
-        Te gjitha te drejtat jane te autorizuara dhe nuk lejohet shperndarja e materialeve pa lejen tone.
-      </p>
-      <div class="social">
-        <a href="https://www.instagram.com/" target="target">  <i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/?lang=en" target="blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.google.com/" target="blank"><i class="fab fa-google"></i></a>
-      </div>
-    </br>
-    <p id="ditaf"></p>
 
-<script>
-
-if (typeof(Storage) !== "undefined") {
- localStorage.setItem("Data formimit", "Ky portal u formua me <b>16-01-2021</b>.");
-  document.getElementById("ditaf").innerHTML = localStorage.getItem("Data formimit");
-} else {
-  document.getElementById("ditaf").innerHTML = "Browseri juaj nuk e perkrah localStorage";
-}
-</script>
-    </div>
-  </div>
-  <!--Pjesa ne mes e footerit -->
-  <div class="center">
-    <h2>
-      Address
-    </h2>
-    <div class="about">
-      <div class="pa">
-        <span class="fas fa-map-marker-alt"></span>
-          <span class="text">Prishtinë</span>
-        </div>
-<div class="phone">
-          <span class="fas fa-phone-alt"></span>
-          <span class="text">+383 44 444 444</span>
-      </div>
-      <div class="email">
-        <span class="fas fa-envelope"></span>
-        <span class="text">Portal@example.com</span>
-      </div>
-    </div>
-  </div>
- 
-  </form>
-</footer>
+           <?php include('./views/footer.php')  ?>
 </body>
 </html>

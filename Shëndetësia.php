@@ -10,22 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <nav>
-      <div class="logo">
-Portal</div>
-<input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-<li><a  href="portal.html">Home</a></li>
-<li><a href="Lajme.html">Lajme</a></li>
-<li><a class="active" href="Shëndetësia.html">Shëndetësia</a></li>
-<li><a href="Sport.html">Sport</a></li>
-<li><a href="Argëtim.html">Argëtim</a></li>
-<li><a href="Kontakti.html">Kontakti</a></li>
-</ul>
-</nav>
+
+
+  <?php include('./views/header.php')  ?>
+
+
 <figure  >
 <img src="MasatKryesore.jpg" height="300px" width="50%" align="left" alt="Masat Kryesore ndaj Covid-19"/>
 </figure>
@@ -53,7 +42,7 @@ Portal</div>
     Cili është vakti më i mirë për tu ushqyer me kalcium?</br>
     Cilat janë ushqimet më të pasura me kalcium?<br>
     Këto dhe më shumë përgjigje i gjeni në linkun mëposhtë.
-    <a href="Kockateforta.html" > Linku  </a>
+    <a href="Kockateforta.php" > Linku  </a>
   </section>
    <section style="width:30%;position:absolute;left:33%">
    <h4>Dhjami në regjionin e belit</h4> 
@@ -62,7 +51,7 @@ Portal</div>
    Si mund ta reduktoni dhjamin në zonën e belit?<br>
    Çfarë të pini për rënie në peshë?<br>
    Këto dhe më shumë përgjigje i gjeni në linkun mëposhtë.
-   <a href="Dhjami.html" ><br> Linku  </a>
+   <a href="Dhjami.php" ><br> Linku  </a>
 
   </section>
   <section style="width:30%;position:absolute;right:0">
@@ -72,7 +61,7 @@ Portal</div>
     Në cilat mosha janë të rrezikuar njerzit me sëmundje shoqëruese nga Covid-19?<br>
     Si ndikon sëmundjet e sheqerit në Covid-19?</br>
     Këto dhe më shumë përgjigje i gjeni në linkun mëposhtë.
-    <a href="Sheqeri.html" > Linku  </a>
+    <a href="Sheqeri.php" > Linku  </a>
 
   </section></br></br></br></br></br></br></br></br></br>
  
@@ -144,63 +133,8 @@ Portal</div>
   Të rriturit mund të rrisin aktivitetin e tyre deri në 5 orë (300 minuta) çdo javë me ushtrime intesive aerobike, ose në dy ose më shumë ditë në javë në të gjitha grupet e mëdha të muskujve (të këmbëve, vitheve, shpinës, barkut, gjoksit, shpatullave dhe krahët), ose një shëtitje prej 2 orësh e 30 minuta (150 minuta) një aktivitet të moderuar intesiteti aerobik.
 </p>
 
- <!--Footeri-->
- <footer >
-  <div class="foteri">
-    <!--Pjesa e par e footerit About us ,inkonat -->
-  <div class="f">
-    <h2>
-      About us
-    </h2>
-    <div class="about">
-      <p>
-        Te gjitha te drejtat jane te autorizuara dhe nuk lejohet shperndarja e materialeve pa lejen tone.
-      </p>
-      <div class="social">
-        <a href="https://www.instagram.com/" target="target">  <i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/?lang=en" target="blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.google.com/" target="blank"><i class="fab fa-google"></i></a>
-      </div>
-    </br>
-    <p id="ditaf"></p>
 
-<script>
-
-if (typeof(Storage) !== "undefined") {
- localStorage.setItem("Data formimit", "Ky portal u formua me <b>16-01-2021</b>.");
-  document.getElementById("ditaf").innerHTML = localStorage.getItem("Data formimit");
-} else {
-  document.getElementById("ditaf").innerHTML = "Browseri juaj nuk e perkrah localStorage";
-}
-</script>
-    </div>
-  </div>
-  <!--Pjesa ne mes e footerit -->
-  <div class="center">
-    <h2>
-      Address
-    </h2>
-    <div class="about">
-      <div class="pa">
-        <span class="fas fa-map-marker-alt"></span>
-          <span class="text">Prishtinë</span>
-        </div>
-<div class="phone">
-          <span class="fas fa-phone-alt"></span>
-          <span class="text">+383 44 444 444</span>
-      </div>
-      <div class="email">
-        <span class="fas fa-envelope"></span>
-        <span class="text">Portal@example.com</span>
-      </div>
-    </div>
-  </div>
- 
-  </form>
-</footer>
-
+<?php include('./views/footer.php')  ?>
 
 </body>
 </html>

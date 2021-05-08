@@ -111,22 +111,7 @@ h1{
 </head>
 
   <body>
-    <nav>
-      <div class="logo">Portal</div>
-      <input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
-      </label>
-<ul>
-<li><a  href="portal.html">Home</a></li>
-<li><a class="active" href="Lajme.html">Lajme</a></li>
-<li><a href="Shëndetësia.html">Shëndetësia</a></li>
-<li><a href="Sport.html">Sport</a></li>
-<li><a href="Argëtim.html">Argëtim</a></li>
-<li><a href="Kontakti.html">Kontakti</a></li>
-
-</ul>
-</nav>
+  <?php include('./views/header.php')  ?>
 <div class="LAJMET">
   
   <h1>Lajmet nga vendi</h1>
@@ -137,14 +122,14 @@ h1{
     <table>
       <tr>
            <td rowspan="2" id="lajmi_1">
-            <img src="lajmi1.jpg" alt="Lajmi pare"><a href="Lajmi_1.html" target="blank">
+            <img src="lajmi1.jpg" alt="Lajmi pare"><a href="Lajmi_1.php" target="blank">
             <h2>Bie qeveria Hoti, Kushtetuesja e çon Kosovën në zgjedhje brenda 40 ditësh</h2></a>
             <p>Gjykata Kushtetuese e Kosovës ka hedhur poshtë votën e deputetit Etem Arifi, vendimtare në formimin e qeverisë së kryesuar nga Avdullah Hoti, dhe ka urdhëruar mbajtjen e zgjedhjeve të parakohshme parlamentare.</p>  
           
             </td>
             <td id="lajmi_2">
               
-              <img src="l2.jpg" alt="Lajmi dyte"> <a href="Lajmi_2.html" target="blank">
+              <img src="l2.jpg" alt="Lajmi dyte"> <a href="Lajmi_2.php" target="blank">
                 <h5>Mërgimtarët sërish ballafaqohen me pritjet kufitare – kolona automjetesh në kufirin Kroaci-Slloveni</h5>  </a>
               <p>Nga 1 janari, bashkatdhetarët që kanë qëndruar për festat e fundvitit në Kosovë, tani po kthehen në vendet ku punojnë dhe veprojnë.Por, sërish edhe për t’u kthyer ata po hasin në pengesa të ndryshme.   </p>
   
@@ -153,7 +138,7 @@ h1{
        <tr>
             <td id="lajmi_3">
               <img src="l1.png" alt="Lajmi trete">
-            <a href="Lajmi_3.html" target="blank">
+            <a href="Lajmi_3.php" target="blank">
           <h5>Viti 2020 ka pasur zhvillime të jashtëzakonshme politike dhe nuk ka qenë aspak i lehtë për qytetarët e Kosovës.</h5>  
          </a> 
         <p>Përveç ngjarjeve politike, si formimi dhe rënia e dy qeverive, ftesat e Gjykatës Speciale për ish-liderët e UÇK-së, dialogu Kosovë-Serbi etj, vendi është përballur edhe me pandeminë COVID-19.</p>
@@ -163,7 +148,7 @@ h1{
   </div>
   
     <div class="A">
-      <a href="Lajme.html" target="blank"><p>Lexo më shumë</p></a>
+      <a href="Lajme.php" target="blank"><p>Lexo më shumë</p></a>
       </div>
       <h1>Lajmet nga bota</h1>
 <hr class="vija">
@@ -173,14 +158,14 @@ h1{
       <tr>
            <td rowspan="2" id="lajmi_1">
             <img src="lajmi3.jpg" alt="Lajmi katert">   
-            <a href="Lajmi_4.html" target="blank">
+            <a href="Lajmi_4.php" target="blank">
             <h2>Joe Biden fiton zgjedhjet presidenciale në SHBA</h2> </a>
             <p>Kandidati i demokratëve, Joe Biden, sipas raportimeve të njëzëshme të disa mediave amerikane ka fituar zgjedhjet presidenciale në SHBA pas fitores në Pensilvani. Trump duket se nuk e njeh rezultatin.</p>
             
             </td>
             <td id="lajmi_2">
               <img src="lajmi2.jpg" alt="Lajmi peste">
-              <a href="Lajmi_5.html" target="blank">
+              <a href="Lajmi_5.php" target="blank">
               <h5>Masa të reja në mbarë botën pas variantit të ri të koronavirusit</h5></a>
               <p>Kreu i Organizatës Botërore të Shëndetësisë po bën thirrje për intensifikim të studimit të sekuencës gjenetike të koronavirusit pas zbulimit të varianteve të reja.</p>
   
@@ -189,7 +174,7 @@ h1{
        <tr>
             <td id="lajmi_3">
               <img src="l6.jpg" alt="Lajmi gjashte">
-        <a href="Lajme_6.html" target="blank">
+        <a href="Lajme_6.php" target="blank">
         <h5>Bill Gates parashikon që jeta do të ‘kthehet në normalitet’ në vitin 2021 pas ‘vitit shkatërrues’</h5></a>
         <p>Bill Gates, i cili ka një vlerë neto të vlerësuar prej 120.1 miliardë dollarësh, tha se bota “nuk është në pyll” por beson se ka “lajme të mira që vijnë në vitin 2021” ndërsa vaksinat përhapen.</p>
              </td>
@@ -222,60 +207,7 @@ h1{
   <hr class="vija" >
 </aside>
 </div>
- <!--Footeri-->
- <footer >
-  <div class="foteri">
-    <!--Pjesa e par e footerit About us ,inkonat -->
-  <div class="f">
-    <h2>
-      About us
-    </h2>
-    <div class="about">
-      <p>
-        Te gjitha te drejtat jane te autorizuara dhe nuk lejohet shperndarja e materialeve pa lejen tone.
-      </p>
-      <div class="social">
-        <a href="https://www.instagram.com/" target="target">  <i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/?lang=en" target="blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.google.com/" target="blank"><i class="fab fa-google"></i></a>
-      </div>
-    </br>
-    <p id="ditaf"></p>
 
-<script>
-
-if (typeof(Storage) !== "undefined") {
- localStorage.setItem("Data formimit", "Ky portal u formua me <b>16-01-2021</b>.");
-  document.getElementById("ditaf").innerHTML = localStorage.getItem("Data formimit");
-} else {
-  document.getElementById("ditaf").innerHTML = "Browseri juaj nuk e perkrah localStorage";
-}
-</script>
-    </div>
-  </div>
-  <!--Pjesa ne mes e footerit -->
-  <div class="center">
-    <h2>
-      Address
-    </h2>
-    <div class="about">
-      <div class="pa">
-        <span class="fas fa-map-marker-alt"></span>
-          <span class="text">Prishtinë</span>
-        </div>
-<div class="phone">
-          <span class="fas fa-phone-alt"></span>
-          <span class="text">+383 44 444 444</span>
-      </div>
-      <div class="email">
-        <span class="fas fa-envelope"></span>
-        <span class="text">Portal@example.com</span>
-      </div>
-    </div>
-  </div>
-
-</footer>
+<?php include('./views/footer.php')  ?>
 </body>
 </html>

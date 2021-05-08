@@ -12,27 +12,10 @@
     </head>
   <body>
 
-    <nav>
-      <div class="logo">Portal</div>
-      <input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-
-<li><a  href="portal.html">Home</a></li>
-<li><a href="Lajme.html">Lajme</a></li>
-<li><a href="Shëndetësia.html">Shëndetësia</a></li>
-<li><a href="Sport.html">Sport</a></li>
-<li><a href="Argëtim.html">Argëtim</a></li>
-<li><a class="active" href="Kontakti.html">Kontakti</a></li>
+  <?php include('./views/header.php')  ?>
 
 
-
-</ul>
-</nav>
-
-
+  <?php include('./views/footer.php')  ?>
   </body>
   </html>
   
