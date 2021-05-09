@@ -47,9 +47,13 @@ aside{
     <main>
 <h1>Mërgimtarët sërish ballafaqohen me pritjet kufitare – kolona automjetesh në kufirin Kroaci-Slloveni</h1>
 <img src="l2.jpg" alt="">
-<p>Nga 1 janari, bashkatdhetarët që kanë qëndruar për festat e fundvitit në Kosovë, tani po kthehen në vendet ku punojnë dhe veprojnë.
+<p>
 
-    Por, sërish edhe për t’u kthyer ata po hasin në pengesa të ndryshme, dhe pritje të gjata kufitare.</p>
+   Nga 1 janari, bashkatdhetarët që kanë qëndruar për festat e fundvitit në Kosovë, tani po kthehen në vendet ku punojnë dhe veprojnë.Por, sërish edhe për t’u kthyer ata po hasin në pengesa të ndryshme, dhe pritje të gjata kufitare.
+
+
+ 
+    </p>
 <br>
 <p>
     Në një foto dërguar Telegrafit, shihen kolona të gjata të automjeteve në kufirin Kroaci-Slloveni.

@@ -27,11 +27,40 @@
 <a style="border:1px solid black" href="https://omk-rks.org/wp-content/uploads/2020/06/Manual-p%C3%ABr-parandalimin-dhe-luftimin-e-COVID19.pdf" target=_blank>
  Linku </a>
  <div class="media1" >
- <article  style="border:1px solid black; width: 49%; height:180px;position:absolute; word-wrap: normal;"> Deri tani janë aprovuar disa vaksina nga Kina,SHBA,Rusia por disa prej tyre nuk i kanë kaluar të gjitha fazat pë tu përdorur. Vaksina Pfizer dhe Biontech është një vaksinë nga Gjermania që u aprovua në shumë vende dhe poashtu po përdoret në disa prej tyre. Gjithashtu vaksina pritet të vij edhe në Shqipëri dhe Kosovë por nuk dihet data e saktë. Kjo vaksinë është 95% efektive, një përqindje e lartë dhe ndër më të lartat kundrejt vaksinave tjera. Vetëm 5% e tyre kanë pasur efekte anësore si kokëdhimbje dhe lodhje. 
+ <article  style="border:1px solid black; width: 49%; height:180px;position:absolute; word-wrap: normal;"> 
+ <p>
+ <?php
+ $stringu1 = "Deri tani janë aprovuar disa vaksina nga Kina,SHBA,Rusia por disa prej tyre nuk i kanë kaluar te gjitha fazat për tu përdorur. 
+ Vaksina Pfizer dhe Biontech është një vaksinë nga Gjermania që u aprovua në shumë vende dhe poashtu po përdoret në disa prej tyre. 
+ Gjithashtu vaksina pritet të vij edhe në Shqipëri dhe Kosovë por nuk dihet data e saktë. 
+ Kjo vaksinë është 95% efektive, një përqindje e lartë dhe ndër më te lartat kundrejt vaksinave tjera. 
+ Vetëm 5% e tyre kanë pasur efekte anësore si kokëdhimbje dhe lodhje." ;
+ 
+ $pattern = '/te/';
+ $replace = "të";
+ echo preg_replace($pattern,$replace,$stringu1);
+
+ ?>
+ </p>
 </article></div>
  <div >
- <article style="border:1px solid black; width: 49%; height:180px;position:absolute;right:0; "> Sa më shumë përhapet një virus aq më shumë mutacione(variante) shfaqen.Një prej varianteve më të përfolur është ai britanik që përmban mbi 20 mutacione, tetë prej të cilave në zgjatimet që i shërbejnë virusit për të penetruar dhe infektuar qelizat e njeriut. Këto zgjatime janë në shenjestër të kurave mjekësore dhe vaksinave kundër koronavirusit.Shkencëtarët besojnë se vaksinat që janë miratuar deri tani do të jenë të efektshme edhe kundër variantit të ri, por ende vazhdon puna për ta konfirmuar këtë bindje.Deri atëherë zbatoni masat. 
+ <article style="border:1px solid black; width: 49%; height:180px;position:absolute;right:0; "> 
+ <p>
+<?php
 
+  $stringu2 ="Sa më shumë përhapet nje virus aq më shumë mutacione(variante) shfaqen,
+ nje prej varianteve më të përfolur është ai britanik që përmban mbi 20 mutacione, 
+ tetë prej të cilave në zgjatimet që i shërbejnë virusit për të penetruar dhe infektuar qelizat e njeriut. 
+ Këto zgjatime janë nje shenjestër të kurave mjekësore dhe vaksinave kundër koronavirusit.
+ Shkencëtarët besojnë se vaksinat që janë miratuar deri tani do të jenë të efektshme edhe kundër variantit të ri, 
+ por ende vazhdon puna për ta konfirmuar këtë bindje.Deri atëherë zbatoni masat.";
+ $pattern = '/nje/';
+ $replace = "një";
+ echo preg_replace($pattern,$replace,$stringu2);
+
+
+?>
+</p>
 </article></div>
   </br></br></br></br></br></br></br></br>
    <h1 style="text-align:center;">Këshilla mjeksore </h1></br>

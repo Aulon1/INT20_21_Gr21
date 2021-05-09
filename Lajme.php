@@ -124,8 +124,10 @@ h1{
            <td rowspan="2" id="lajmi_1">
             <img src="lajmi1.jpg" alt="Lajmi pare"><a href="Lajmi_1.php" target="blank">
             <h2>Bie qeveria Hoti, Kushtetuesja e çon Kosovën në zgjedhje brenda 40 ditësh</h2></a>
-            <p>Gjykata Kushtetuese e Kosovës ka hedhur poshtë votën e deputetit Etem Arifi, vendimtare në formimin e qeverisë së kryesuar nga Avdullah Hoti, dhe ka urdhëruar mbajtjen e zgjedhjeve të parakohshme parlamentare.</p>  
-          
+            <p>
+            
+            Gjykata Kushtetuese e Kosovës ka hedhur poshtë votën e deputetit Etem Arifi, vendimtare në formimin e qeverisë së kryesuar nga Avdullah Hoti, dhe ka urdhëruar mbajtjen e zgjedhjeve të parakohshme parlamentare.</p>  
+            
             </td>
             <td id="lajmi_2">
               
