@@ -143,6 +143,7 @@
     <hr>
   </a>
   <button class="b2" > Hiq ose shiko</button>
+  <br>
   </div>
   <div class="j2">
     <figure  >
@@ -156,7 +157,7 @@
     <article style="border:1px solid black; width: 49%; height:185px;position:absolute; right:0 ;"> Sa më shumë përhapet një virus aq më shumë mutacione(variante) shfaqen.Një prej varianteve më të përfolur është ai britanik që përmban mbi 20 mutacione, tetë prej të cilave në zgjatimet që i shërbejnë virusit për të penetruar dhe infektuar qelizat e njeriut. Këto zgjatime janë në shenjestër të kurave mjekësore dhe vaksinave kundër koronavirusit.Shkencëtarët besojnë se vaksinat që janë miratuar deri tani do të jenë të efektshme edhe kundër variantit të ri, por ende vazhdon puna për ta konfirmuar këtë bindje.Deri atëherë zbatoni masat. 
        </article></br></br></br></div>
 </div>
-
+<br>
 
 <!--Sporti-->
 <div class="PjesaSport">
@@ -167,6 +168,7 @@
   </a>
   <button class="b3" > Hiq ose shiko</button>
   </div>
+  <br>
   <div class="j3">
     <div class="slajmet">
       <div class="lajmi_1">
@@ -188,23 +190,14 @@
             </p>
         </a>
       </div>
-      <div class="lajmi_4">
-        <a href="slajmi_5.php" >
-          <img src="slajmi_4.jpg" alt="Fotoja e kater">
-          <h2>&Ccedil;iklizmi apo ecja? Cilën duhet ta preferoni më shumë?&Ccedil;farë ndodh nëse e përdorni shumë rrallë një makinë?</h2>
-          <p>Çfarë ndodh nëse e përdorni shumë rrallë një makinë?
-             Me siguri se me kohën nuk do të funksionojë siç duhet, 
-             ose do të prishet e gjitha.
-             Thuajse e njëjta rregull aplikohet edhe te trupi.
-          </p>
-        </a>
-      </div>
+      
     </div>
     </div><br>    
   <div class="lexomeshum">
     <a href="Sport.php"><p>Lexo me shume</p></a>
   </div>
-</div>
+  </div>
+  <br> <br> <br> 
 
 
 
