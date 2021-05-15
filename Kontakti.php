@@ -1,3 +1,9 @@
+<?php 
+
+
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
@@ -11,12 +17,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
   <body>
+ 
+  <?php
+   
 
-  <?php include('./views/header.php')  ?>
+   include('./views/header.php'); 
+   include('signup.php');
 
 
-  <?php include('./views/footer.php')  ?>
-  </body>
-  </html>
   
+  ?>
+
+
+  
+  </body>
+  
+  </html>
+  <?php include('./views/footer.php') ;
+
+
+  ?>
   
