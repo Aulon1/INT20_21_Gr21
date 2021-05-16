@@ -1,4 +1,8 @@
-
+<?php
+include 'autoload.php';
+$n= new news;
+$news=$n->all();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,10 +40,6 @@
 <textarea name="permbajtja" id="permbajtja" cols="50" rows="3" placeholder="Permbajtja e lajmit..."></textarea>
 </div>
 <div class="form-group">
-<label for="data">Data:</label>
-<input type="date" name="data" id="data" class="form-control">
-</div>
-<div class="form-group">
 <input type="file" name="images[]" multiple class="form-control" id="image">
 </div>
 <div class="form-group">
@@ -56,16 +56,30 @@
   <div class="row">
 
     <div class="col-nd-8">
+    <?php if(count($news)>0):?>
       <div class="table-responsive">
         <table class="table table-borderes">
           <tr>
             <th>ID</th>
             <th>Titulli</th>
-            <th>Permbajtja</th>
             <th></th>
           </tr>
-      </div>
+          <?php foreach($news as $news): ?>
+                            <tr>
+                                <th><?= $news['id'] ?></th>
+                                <th><?= $news['titulli'] ?></th>
 
+                                <th>
+                                    <a href="?action=edit&news_id=<?= $news['id'] ?>" class="btn btn-sm btn-primary">Edit</a>
+                                    <a href="?action=delete&news_id=<?= $news['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?');">Delete</a>
+                                </th>
+                            </tr>
+                        <?php endforeach; ?>
+        </table>
+      </div>
+      <?php else: ?>
+      0 Lajme
+      <?php endif; ?>
     </div>
 
   </div>
