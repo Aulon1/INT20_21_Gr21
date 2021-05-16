@@ -137,6 +137,7 @@
 </svg>
 <img src="https://mongooseagency.com/files/3415/9620/1413/Return_of_Sports.jpg" style="height: 300px; margin-left: 8%; width: 38%;" >
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6m-qe5sQpKXNowsEibT9OKg0Gp9GgqPru3w&usqp=CAU"  style="height: 300px; width: 38%; margin-left: 2%;"> 
+
 <p></br>
   <h2  style="text-align: center;"><b>Fitnesi</b></h2></br>
   Fitnesi, sporti i trupit të bukur, ka pushtuar botën. Janë miliona persona në botë, që i janë përkushtuar me devotshmëri stërvitjes së ëmbël të muskujve, me synimin e krijimit të trupit perfekt dhe pa dhjamë e të kërkimit të rinisë së përjetshme.
@@ -157,13 +158,30 @@
   <b>Fitnes amator, pompat e famshme</b></br>
   Në fakt, çdo ushtrim i karakterit fizik, edhe pse nuk mund të konsiderohet një ushtrim fitnesi i pastër, gjithsesi ka një ngjashmëri “amatore” me veprimit profesional. “Ulje-ngritjet”, apo “pompat” në zhargonin popullor zhvillojnë muskujt e gjoksit e të shpatullave. Por edhe ecja e bazuar mbi duart rekomandohet shpesh pasi ndikon në zhvillimin e muskujve të pjesës së shpinës.</br></br>
   <b>Shtangat e dorës, fitnesi në shtëpi</b></br>
-  Shumë njerëz aplikojnë përdorimin e girave për të ndërtuar muskujt në kushte shtëpie. Dhe kjo mund të arrihet. Nëse nuk mund të shkosh në një palestër, ose nuk mund të përballojë për të marrë një shumë apo çmim të caktuar, atëherë mund të bësh “fitnes shtëpiak” edhe me një shtangë dore dhe një stol. Në fakt, ju mund të punoni të gjitha grupet e muskujve duke përdorur vetëm shtangë dore. Shtangat e dorës ofrojnë një gamë të rritur lëvizje dhe shumë mbingarkimi me muskujt dhe ndihmojnë në një ndërtim një ndërtim jashtëzakonisht efektive të muskujve të gjoksit, të parakrahëve, shpatullave. </br></br>
+<?php
+$myfile = fopen("fread.txt", "w") or die("Unable to open file!");
+$txt="Shtangat e dorës ofrojnë një gamë të rritur lëvizje dhe shumë mbingarkimi me muskujt dhe ndihmojnë në një ndërtim një ndërtim jashtëzakonisht efektive të muskujve të gjoksit, të parakrahëve, shpatullave.";
+fwrite($myfile, $txt);
+fclose($myfile);
+$fread = fopen('fread.txt', "r");
+while(!feof($fread)) {  
+  echo fgetc($fread);  
+}  
+fclose($fread);  
+?>
+  
+   </br></br>
   <b> Për një trup muskuloz</b></br>
   Të rriturit mund të rrisin aktivitetin e tyre deri në 5 orë (300 minuta) çdo javë me ushtrime intesive aerobike, ose në dy ose më shumë ditë në javë në të gjitha grupet e mëdha të muskujve (të këmbëve, vitheve, shpinës, barkut, gjoksit, shpatullave dhe krahët), ose një shëtitje prej 2 orësh e 30 minuta (150 minuta) një aktivitet të moderuar intesiteti aerobik.
-</p>
+  
+</p> 
 
 
 <?php include('./views/footer.php')  ?>
 
+
 </body>
 </html>
+
+
+
