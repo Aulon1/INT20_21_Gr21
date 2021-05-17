@@ -1,7 +1,32 @@
 <?php
 include 'autoload.php';
+$errors=[];
 $n= new news;
 $news=$n->all();
+if(isset($_GET['action']) && ($_GET['action'] == 'edit')) {
+  if(isset($_GET['news_id']) && (is_numeric($_GET['news_id'])))  {
+      echo "PO";
+      $_SESSION['news_id'] = $_GET['news_id'];
+      header("Location: edit-product.php");
+  } else
+      $errors[] = "Product doesn't exist!";
+  
+}
+if(isset($_GET['action']) && ($_GET['action'] == 'delete')) {
+  if(isset($_GET['news_id']) && (is_numeric($_GET['news_id'])))  {
+      if($n->delete($_GET['news_id'])) 
+          header("Location: addnews.php");
+      else
+          $errors[] = "Something want wrong while deleting product with id: " .$_GET['news_id'];
+  } else
+      $errors[] = "Product doesn't exist!";
+  
+}
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

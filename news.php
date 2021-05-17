@@ -10,7 +10,7 @@ class news{
 }
 public function all(){
     $news = [];
-    $sql="SELECT*FROM `news`";
+    $sql="SELECT*FROM `lajmet`";
 
     $result = $this -> mysqli -> query($sql);
 
@@ -23,7 +23,14 @@ public function all(){
 }
 
 
+public function delete($id) {
+    $sql = "DELETE FROM `lajmet` WHERE `id` = '" .$id ."'";
 
+    if($this->mysqli->query($sql))
+        return true;
+
+    return false;
+}
 }
 /**class News{
     private $mysqli;
