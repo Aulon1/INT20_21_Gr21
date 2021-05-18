@@ -1,6 +1,17 @@
-<?php 
-include
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styleforma.css">
+</head>
+<body>
 
+</body>
+</html> -->
+
+<?php 
 session_start(); 
 include "db_conn.php";
 
@@ -17,14 +28,16 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 	$pass = validate($_POST['password']);
 
 	if (empty($uname)) {
-		header("Location: index.php?error=User Name is required");
+		echo "Ploteso username!";
+
 	    exit();
 	}else if(empty($pass)){
-        header("Location: index.php?error=Password is required");
+		echo "Ploteso passwordin!";
+
 	    exit();
 	}else{
 		// hashing the password
-        $pass = md5($pass);
+        // $pass = md5($pass);
 
         
 		$sql = "SELECT * FROM user WHERE user_name='$uname' AND password='$pass'";
@@ -53,3 +66,5 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 	header("Location: indexform.php");
 	exit();
 }
+
+?>
