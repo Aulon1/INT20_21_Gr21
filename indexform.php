@@ -6,7 +6,20 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" type="text/css" href="styleforma.css">
 
+<style>
+.form{
+	margin-top: 13%;
+	margin-bottom: 12%;
+	
+}
 
+
+body{
+	background-color:  #ccffcc;
+}
+
+
+</style>
 </head>
 
 <body>
@@ -14,7 +27,7 @@
 	<?php
 	include('./views/header.php');
 	?>
-
+<div class="form">
 	<form action="login.php" method="post">
 		<h2>LOGIN</h2>
 
@@ -46,7 +59,8 @@
 
 		<!-- <a href="signup.php">Create an account</a> -->
 	</form>
-	
+</div>
+
 </body>
 <?php include('./views/footer.php');
 
