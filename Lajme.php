@@ -1,9 +1,11 @@
 <?php
-    session_start();
-    include 'autoload.php';
-    $news = new news;
-    $errors = [];
-    ?>
+// Create database connection using config file
+include_once("config.php");
+
+// Fetch all users data from database
+$result = mysqli_query($mysqli, "SELECT * FROM lajmet ORDER BY id DESC");
+
+?>
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
@@ -175,28 +177,26 @@ Portal</div>
   <h1>Lajmet e fundit</h1>
   <hr class="vija">
 <main>
-<div class="container my-5">
-        <div class="row">
-            <?php foreach($news->all() as $news): ?>
-                <div class="col-md-4 my-2">
-                            <?php
-                                $image = json_decode($news['image'], true);
-                        {
-                            ?>
-                                <img src="./image/<?= $image[0] ?>" alt="<?= $news['titulli'] ?>" class="img-fluid" style="height: 220px; display: block; margin: 0px auto;" />
-                                <?php }  ?>
-                            <h4><?= $news['titulli'] ?></h4>
-                            <p>
-                            <?= $news['permbajtja'] ?>
-                            </p>
-                </div>
-            <?php endforeach; ?>
-        </div>
-    </div>
-        <a href="addnews.php" target="_blank">
-       
+
+    <?php
+    while($news = mysqli_fetch_array($result)) {
+         echo '<div class="container my-5">';
+         echo '<div class="row">';
+         echo '<div class="col-md-4 my-2">';
+         echo "<br>";
+         echo "<img src=".$news["image"],"height=100 width=100";
+         echo "<br>";
+        echo "<h4>".$news['titulli'] ."</h4>";
+        echo "<p>".$news['permbajtja'] ."</p>";
+ echo '</div>';
+ echo '</div>';
+ echo '</div>';
+    }
+    ?>
+      
 </main>
-</div> 
+</div>
+ <a href="add_data.php" target="_blank">
 <button  class="btn btn-dark btn-lg btn-block">Shto Lajme</button></a>
 
   </div>
