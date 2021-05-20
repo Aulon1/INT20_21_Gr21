@@ -10,7 +10,7 @@
 
 <body>
 
-
+<?php
 	$uname = $password = "";
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
