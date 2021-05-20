@@ -66,11 +66,16 @@ $errors=[];
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="styleforma.css">
 
+<style>
 
+.error{color: #FF0000;}
+
+</style>
 </head>
 
 <body>
 
+	
 	<?php
 	include('./views/header.php');
 	?>
@@ -112,8 +117,8 @@ echo"</ul><br>";
 	</form>
 	
 </body>
-<?php include('./views/footer.php');
+ <?php include('./views/footer.php'); 
 
 
-?>
+ ?> 
 </html>

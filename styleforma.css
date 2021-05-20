@@ -1,6 +1,6 @@
 body {
-	/* background: #1690A7; */
-	background: wheat;
+	background: #1690A7;
+	/* background: blanchedalmond; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,7 +21,8 @@ form {
 	padding: 30px;
 	background: #fff;
 	border-radius: 15px;
-	/* height: 520px; */
+	height: 720px;
+	/* height: auto; */
 }
 
 h2 {

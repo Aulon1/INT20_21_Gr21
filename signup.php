@@ -5,6 +5,19 @@
      <title>SIGN UP</title>
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" type="text/css" href="styleforma.css">
+
+<style>
+.form{
+	margin-top: 10%;
+	margin-bottom: 12%;
+}
+
+body{
+	background-color:  #ccffcc;
+}
+
+</style>
+
 </head>
 
 <body>
@@ -12,10 +25,9 @@
      include('./views/header.php');
      ?>
 
-
+<div class="form">
      <form action="signup-check.php" method="post">
           <h2>SIGN UP</h2>
-
 
 
           <label>Name</label>
@@ -77,7 +89,7 @@
           <button name="signupbutton" type="submit" name="submit">Sign Up</button>
           <a href="login.php" class="ca">Already have an account?</a>
      </form>
-
+</div>
 
 
 </body>
