@@ -74,7 +74,7 @@
           <br>
           <br> -->
 
-          <button type="submit" name="submit">Sign Up</button>
+          <button name="signupbutton" type="submit" name="submit">Sign Up</button>
           <a href="login.php" class="ca">Already have an account?</a>
      </form>
 

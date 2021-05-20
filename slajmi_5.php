@@ -53,7 +53,7 @@ main{
         <img src="slajmi_4.jpg" alt=""> 
            <div class="post"> 
                 <span>
-                    <a href="slocation.html" target="_blank">
+                    <a href="slocation.php" target="_blank">
                         <i class="fa fa-map-marker" aria-hidden="true">&nbsp;</i>
                         Prishtine 
                     </a>&nbsp;

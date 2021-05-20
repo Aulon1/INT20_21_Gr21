@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -8,8 +8,7 @@
 </head>
 <body>
 
-</body>
-</html> -->
+
 
 <?php 
 session_start(); 
@@ -50,14 +49,17 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
             	$_SESSION['user_name'] = $row['user_name'];
             	$_SESSION['name'] = $row['name'];
             	$_SESSION['id'] = $row['id'];
-            	header("Location: home.php");
-		        exit();
+            	header("Location: indexform.php");
+				
+				exit();  
             }else{
-				header("Location: index.php?error=Incorect User name or password");
-		        exit();
+				echo "incorrect";
+				//header("Location: index.php?error=Incorect User name or password");
+				exit();
 			}
 		}else{
-			header("Location: index.php?error=Incorect User name or password");
+			echo "incorrect";
+			//header("Location: index.php?error=Incorect User name or password");
 	        exit();
 		}
 	}
@@ -68,3 +70,5 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 }
 
 ?>
+</body>
+</html>

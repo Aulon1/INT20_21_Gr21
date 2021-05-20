@@ -50,14 +50,14 @@ main{
             <img src="sfoto1.jpg" alt=""> <br>
             <div class="post">
                 <span class="vendi">
-                    <a href="slocation.html" target="_blank">
+                    <a href="slocation.php" target="_blank">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                 Prishtine
                     </a>
                 </span>
                 &nbsp;
                 <span class="time">
-                    <a href="kalendari.html" target="_blank">
+                    <a href="kalendari.php" target="_blank">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
                     Jan 08 2020
                     </a>
