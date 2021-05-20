@@ -1,8 +1,3 @@
-<?php
-
-
-
-?>
 
 <!DOCTYPE html>
 
@@ -22,22 +17,20 @@
 <?php
 
 
-  include('./views/header.php');
+  include ('./views/header.php');
 
 
-
-
-  ?>
+    ?>
   
   <?php
-  include('login.php');
+  include ('login.php');
   ?>
 
 
 </body>
 
 </html>
-<?php include('./views/footer.php');
+<?php include ('./views/footer.php');
 
 
 ?>

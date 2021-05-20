@@ -17,7 +17,6 @@
           <h2>SIGN UP</h2>
 
 
-
           <label>Name</label>
           <input type="text" name="name" placeholder="Name">
           <?php
