@@ -58,6 +58,22 @@ $errors=[];
 
 ?>
 
+
+<?php
+require_once('configFB.php');
+
+if(isset($_SESSION['access_token'])){
+	header("Location: pagelogin.php");
+	exit();
+}
+
+
+$redirectTo = "http://localhost/loginfb/callback.php";
+$data = ['email'];
+$fullURL = $handler->getLoginUrl($redirectTo, $data);
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -112,6 +128,8 @@ echo"</ul><br>";
 		<button name="loginbutton" type="submit">Login</button>
 
 		<a href="signup-check.php" class="ca">Create an acount</a>
+        <button name="loginFb" onclick="window.location = '<?php echo $fullURL ?>'" type="submit">Login with Facebook</button>
+
 
 		<!-- <a href="signup.php">Create an account</a> -->
 	</form>
