@@ -7,15 +7,15 @@ include "db_conn.php";
 // $mesgErr = "";
 $errors=[];
 
-//if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-//	function test_input($data)
-//	{
-//		$data = trim($data);
-//		$data = stripslashes($data);
-//		$data = htmlspecialchars($data);
-//		return $data;
-//	}
+	function test_input($data)
+	{
+		$data = trim($data);
+		$data = stripslashes($data);
+		$data = htmlspecialchars($data);
+		return $data;
+	}
 
 
     if(isset($_POST['signupbutton'])){
@@ -87,6 +87,7 @@ $errors=[];
 	  }
 	
 	};
+}
 
 ?>
 	
