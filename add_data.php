@@ -1,35 +1,3 @@
-<?php
-
- if(isset($_FILES['image']))
-  {
-    
-      $errors= array();
-      $file_name = $_FILES['image']['name'];
-      $file_size =$_FILES['image']['size'];
-      $file_tmp =$_FILES['image']['tmp_name'];
-      $file_type=$_FILES['image']['type'];
-      $tmp = explode('.', $file_name);
-      $file_ext = end($tmp);      
-      $extensions= array("jpeg","jpg","png");
-      
-      if(in_array($file_ext,$extensions)=== false){
-         $errors[]="extension not allowed, please choose a JPEG or PNG file.";
-      }
-      
-      if($file_size > 2097152){
-         $errors[]='File size must be excately 2 MB';
-      }
-      
-      if(empty($errors)==true){
-         move_uploaded_file($file_tmp,"image/".$file_name);
-  
-      }else{
-         print_r($errors);
-      }
-   }
-
-
-?>
 <html>
 <head>
 	<title>Add Users</title>
@@ -75,7 +43,7 @@
 
 	<?php
 
-	// Check If form submitted, insert form data into users table.
+	// Check If form submitted, insert form data into news table.
 	if(isset($_POST['save_news_btn'])) {
     $titulli = $_POST['titulli'];
 	$permbajtja= $_POST['permbajtja'];
@@ -84,47 +52,14 @@
 		// include database connection file
 		include_once("config.php");
 
-		// Insert user data into table
+		// Insert news data into table
 		$result = mysqli_query($mysqli, "INSERT INTO lajmet(titulli,permbajtja, image) VALUES('$titulli','$permbajtja', '$image')");
 
-		// Show message when user added
-		echo "User added successfully. <a href='indexx.php'>View Users</a>";
+		// Show message when news added
+		echo "User added successfully. <a href='indexx.php'>View News</a>";
 	 }
 	?>
 	<?php
-	
-//	$errors=[];
-
- //if(isset($_FILES['image']))
- // {
-    
-   // $image = [];
-    //$tmp_name = [];
-
-      //$errors= array();
-      //$file_name = $_FILES['image']['name'];
-     // $file_size =$_FILES['image']['size'];
-     // $file_tmp =$_FILES['image']['tmp_name'];
-     /// $file_type=$_FILES['image']['type'];
-      //$tmp = explode('.', $file_name);
-      //$file_ext = end($tmp);      
-      //$extensions= array("jpeg","jpg","png");
-      
-     //// if(in_array($file_ext,$extensions)=== false){
-        // $errors[]="extension not allowed, please choose a JPEG or PNG file.";
-      //}
-      
-     // if($file_size > 2097152){
-       //  $errors[]='File size must be excately 2 MB';
-      //}
-      
-      //if(empty($errors)==true){
-        // move_uploaded_file($file_tmp,"image/".$file_name);
-  
-     // }else{
-      //   print_r($errors);
-      //}
-  // }
 ?>
    
 	</div>

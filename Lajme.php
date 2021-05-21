@@ -147,7 +147,9 @@ input[type="checkbox"]{
     color: cyan;
   }
 }
-
+#lajmet{
+  display: inline;
+}
 
 </style> 
 </head>
@@ -177,23 +179,18 @@ Portal</div>
   <h1>Lajmet e fundit</h1>
   <hr class="vija">
 <main>
-
+<div style="display: inline;">
     <?php
     while($news = mysqli_fetch_array($result)) {
-         echo '<div class="container my-5">';
-         echo '<div class="row">';
-         echo '<div class="col-md-4 my-2">';
+       echo "<h4>".$news['titulli'] ."</h4>";
          echo "<br>";
-         echo "<img src=".$news["image"],"height=100 width=100";
+         echo "<img class=img-fluid src=\""."image/".$news['image']. "\" height=150 weight2300 display=block>";
          echo "<br>";
-        echo "<h4>".$news['titulli'] ."</h4>";
         echo "<p>".$news['permbajtja'] ."</p>";
- echo '</div>';
- echo '</div>';
- echo '</div>';
+        echo "<hr>";
     }
     ?>
-      
+</div>
 </main>
 </div>
  <a href="add_data.php" target="_blank">
