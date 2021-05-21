@@ -5,7 +5,8 @@ include 'ekipetdb.php';
 if(isset($_COOKIE['is_logged_in'])){
 
     if(isset($_COOKIE['email'])){
-        echo"Welcome ".$_COOKIE['email']." ".'<a href="?action=logout">Logout</a>;';
+        echo"Welcome ".$_COOKIE['email']." ".'<br><a href="?action=logout">Logout</a>;';
+        
     }   
 }else{
     header("Location: login.php");
