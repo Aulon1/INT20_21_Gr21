@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +47,7 @@
           <td>
             <a href="edit.php?editId=<?php echo $customer['id'] ?>" style="color:green">
               <i class="fa fa-pencil" aria-hidden="true"></i></a>&nbsp
-            <a href="index.php?deleteId=<?php echo $customer['id'] ?>" style="color:red" onclick="confirm('Are you sure want to delete this record')">
+            <a href="indexx.php?deleteId=<?php echo $customer['id'] ?>" style="color:red" onclick="confirm('Are you sure want to delete this record')">
               <i class="fa fa-trash" aria-hidden="true"></i>
             </a>
         </tr>
