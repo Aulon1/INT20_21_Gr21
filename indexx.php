@@ -1,48 +1,58 @@
-<?php
-// Create database connection using config file
-include_once("config.php");
-
-// Fetch all users data from database
-$result = mysqli_query($mysqli, "SELECT * FROM lajmet ORDER BY id DESC");
-?>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Homepage</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
-
-
+  <title>index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-<a href="add_data.php">Add New News</a><br/><br/>
 
-    <table width='80%' border='1'>
-   <div class="table-responsive">
-        <table class="table table-bordered">
-          <tr>
-            <th>ID</th>
-            <th>Titulli</th>
-            <th>Data</th>
-            <th>Edit/Delete</th>
-          </tr>
+<div class="card text-center" style="padding:15px;">
+</div><br><br> 
 
+<div class="container">
+  <h2>View Records
+    <a href="add.php" class="btn btn-primary" style="float:right;">Add New Record</a>
+  </h2>
+    <table class="table table-hover">
+      <thead class="bg-dark" style="color:white">
+        <tr>
+          <th>Id</th>
+          <th>Titulli</th>
+          <th>Data</th>
 
-<?php
-    while($news = mysqli_fetch_array($result)) {
-        echo "<tr>";
-        echo "<td>".$news['id']."</td>";
-        echo "<td>".$news['titulli'] ."</td>";
-        echo "<td>".$news['create_at'] ."</td>";
-        echo "<td><a href='edit.php?id=$news[id]'>Edit</a> | <a href='delete.php?id=$news[id]'>Delete</a></td></tr>";
-    }
-    ?>
-    </div>
-    </table>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+          <th></th>
+        </tr>
+      </thead>
+    <tbody>
+      <?php 
+      // Include database file
+      include 'customers.php';
 
+      $customerObj = new Customers();
+      $customers = $customerObj->displayData(); 
+
+      foreach ($customers as $customer) {
+       
+      ?>
+        <tr>
+          <td><?php echo $customer['id']; ?></td>
+          <td><?php echo $customer['titulli']; ?></td>
+          <td><?php echo $customer['create_at']; ?></td>
+          <td>
+            <a href="edit.php?editId=<?php echo $customer['id'] ?>" style="color:green">
+              <i class="fa fa-pencil" aria-hidden="true"></i></a>&nbsp
+            <a href="index.php?deleteId=<?php echo $customer['id'] ?>" style="color:red" onclick="confirm('Are you sure want to delete this record')">
+              <i class="fa fa-trash" aria-hidden="true"></i>
+            </a>
+        </tr>
+      <?php } ?>
+    </tbody>
+  </table>
+</div>
 </body>
 </html>

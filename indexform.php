@@ -71,7 +71,7 @@ if(isset($_SESSION['access_token'])){
 }
 
 
-$redirectTo = "http://localhost/loginfb/callback.php";
+$redirectTo = "http://localhost:8080/INT20_21_Gr21/callback.php";
 $data = ['email'];
 $fullURL = $handler->getLoginUrl($redirectTo, $data);
 ?>
