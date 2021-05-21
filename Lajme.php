@@ -193,7 +193,7 @@ Portal</div>
 </div>
 </main>
 </div>
- <a href="add_data.php" target="_blank">
+ <a href="add.php" target="_blank">
 <button  class="btn btn-dark btn-lg btn-block">Shto Lajme</button></a>
 
   </div>

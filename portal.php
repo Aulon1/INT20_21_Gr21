@@ -1,3 +1,12 @@
+<?php
+// Create database connection using config file
+include_once("config.php");
+
+// Fetch all users data from database
+$result = mysqli_query($mysqli, "SELECT * FROM lajmet ORDER BY id DESC LIMIT 2");
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
@@ -99,41 +108,21 @@
    <h2 class="l1">Lajmet e fundit</h2>
    </a><hr>
    
-   </div>
-   <div class="j1">
-<div class="lajmet">
+   </div><a href="Lajme.php" style="text-decoration: none;"><p>
+   <table>
+   <?php
   
-  <hr class="vija">
-  <div class="lajme">
-    <a href="Lajmi_1.php" target="blank">
-    <img src="lajmi1.jpg" alt="Lajmi pare">
-      <h2>Bie qeveria Hoti, Kushtetuesja e çon Kosovën në zgjedhje brenda 40 ditësh</h2>
-      <p>Gjykata Kushtetuese e Kosovës ka hedhur poshtë votën e deputetit Etem Arifi, vendimtare në formimin e qeverisë së kryesuar nga Avdullah Hoti, dhe ka urdhëruar mbajtjen e zgjedhjeve të parakohshme parlamentare.</p>  
-</a></div>
-  <div class="lajme">
-    <a href="Lajmi_2.php" target="blank">
-    <img src="l2.jpg" alt="Lajmi dyte"> 
-      <h2>Mërgimtarët sërish ballafaqohen me pritjet kufitare – kolona automjetesh në kufirin Kroaci-Slloveni</h2> 
-    <p>Nga 1 janari, bashkatdhetarët që kanë qëndruar për festat e fundvitit në Kosovë, tani po kthehen në vendet ku punojnë dhe veprojnë.Por, sërish edhe për t’u kthyer ata po hasin në pengesa të ndryshme.   </p>
-   </a></div>
-  <div class="lajme">
-    <a href="Lajme_6.php" target="blank">
-    <img src="l6.jpg" alt="Lajmi trete">
-    
-    <h2>Bill Gates parashikon që jeta do të ‘kthehet në normalitet’ në vitin 2021 pas ‘vitit shkatërrues’</h2>
-    <p>Bill Gates, i cili ka një vlerë neto të vlerësuar prej 120.1 miliardë dollarësh, tha se bota “nuk është në pyll” por beson se ka “lajme të mira që vijnë në vitin 2021” ndërsa vaksinat përhapen.</p>
-    </a>
-  </div>
+    while($news = mysqli_fetch_array($result)) {
+        echo "<tr><td>".$news['titulli']."<br>";
+        echo "<img  src=\""."image/".$news['image']. "\" height=200 width=300 ><br>".
+        "</td></tr>";
+     
+    }
+    ?>
+</table>
+    </p></a>
 </div>
-</div>
-</div>
-<br>
-<button class="b1" > 
-<div class="A">
-    <a href="Lajme.php"><p>Lexo më shumë</p></a>
-    </div></button>
-  
-
+<br><br><br>
 
     <!--Shendetsia-->
 <div class="PjesaShendetesis">
