@@ -49,7 +49,7 @@ $mg3="200-340";
   mund ta përfitoni edhe nga lëngu i freskët i portokallit. Një gotë me lëng të freskët përmban %s mg kalcium. Ekspertët theksojnë të mos harroni të përfshini edhe vitaminën D tek dieta juaj. Atë mund ta gjeni fare lehtë tek ushqimet të cilat janë të pasura edhe me kalcium.</br></br> Këtu futen sardelet dhe salmoni të cilat megjithëse nuk preferohen 
   të konsumohen në mëngjes, mund ti lini për dy vaktet e tjera. Pra, çdo mëngjes zgjidhni patjetër nga një gotë qumësht apo lëng portokalli, shoqëruar me ushqime të tjera bulmeti apo perime jeshile. Kështu kockat tuaja do të qëndrojnë të forta për një kohë të gjatë dhe do të shërojnë vetëveten.";
   
-  printf( substr($stringu,23)."<br>",$mg1,$mlg,$mg2,$mg3);
+  printf(substr($stringu,23)."<br>",$mg1,$mlg,$mg2,$mg3);
   echo "<b>Fjala kyçe kockat është përdorur ";
   echo preg_match_all('/kockat/', $stringu);
   echo " herë në tekst."  
